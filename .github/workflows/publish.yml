@@ -12,6 +12,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Quarto publish exige que exista la rama remota gh-pages; la creamos una sola vez.
+      - name: Initialize gh-pages branch if missing
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --heads origin gh-pages | grep -q refs/heads/gh-pages; then
+            echo "Branch gh-pages already exists on origin."
+            exit 0
+          fi
+          echo "Creating orphan branch gh-pages on origin..."
+          git checkout --orphan gh-pages
+          git reset --hard
+          printf '\n' > .nojekyll
+          git add .nojekyll
+          git commit -m "chore: initialize gh-pages for Quarto"
+          git push origin HEAD:gh-pages
+          git checkout main
 
       - uses: quarto-dev/quarto-actions/setup@v2
 
