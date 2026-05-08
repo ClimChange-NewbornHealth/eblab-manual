@@ -11,7 +11,6 @@ book:
   title: "EB-Lab · Manual de trabajo"
   subtitle: Salud ambiental neonatal · exposición y salud perinatal
   date: today
-  cover-image: assets/ebb-logo.png
   site-url: https://climchange-newbornhealth.github.io/eblab-manual/
   repo-url: https://github.com/ClimChange-NewbornHealth/eblab-manual/
   repo-branch: main
