@@ -1,0 +1,40 @@
+# Estándares de código {#sec-codigo}
+
+## Lenguajes predominantes
+
+La mayoría de pipelines históricos están en **R**; algunos proyectos recientes incorporan **Python** (por ejemplo flujos geoespaciales o de descarga automatizada). Los principios siguientes aplican a ambos.
+
+## Estilo y legibilidad
+
+1. **Funciones cortas** — una responsabilidad por función; nombres verbales (`compute_exposure_lag`) sobre abreviaturas opacas.
+2. **Comentarios “por qué”** — no repitas lo obvio del `dplyr` pipeline; sí documenta supuestos epidemiológicos no triviales.
+3. **Constantes arriba** — umbrales clínicos, fechas de corte administrativas, versiones de shapefiles en un bloque único al inicio del script o en `config.R` / `config.py`.
+
+## Organización de scripts
+
+| Carpeta `Code/` | Contenido típico |
+| --- | --- |
+| `Process/` | Ingesta, limpieza, construcción de variables de exposición. |
+| `Descriptive/` | Estadísticos base, figuras exploratorias no finales. |
+| `Models/` | Ajuste de modelos principales, sensibilidades, bootstraps. |
+
+### Salidas
+
+- Gráficos y tablas finales → `Output_Analysis/Graphs` y `.../Tables` según lineamientos.
+- Evita escribir resultados con rutas absolutas locales; parametriza un directorio raíz `here::here()` (R) o equivalente.
+
+## Calidad y revisión
+
+| Check | Antes de merge |
+| --- | --- |
+| Linter básico / `styler` (R) o `ruff` (Python) cuando aplique | Sí |
+| Tiempo de ejecución razonable documentado | Sí |
+| Dependencias nuevas justificadas en `README` | Sí |
+
+## Uso asistido por IA (lineamiento práctico)
+
+Si empleas asistentes generativos:
+
+- **Verifica** salidas numéricas con casos test pequeños conocidos.
+- **No pegues** datos identificables en prompts públicos.
+- **Atribuye** en comentario de PR si un bloque sustancial proviene de asistencia automatizada (transparencia metodológica).

@@ -1,0 +1,40 @@
+# Flujos de trabajo con Git
+
+## Ramas y commits
+
+| Práctica | Motivo |
+| --- | --- |
+| `main` estable | Lo que un colaborador externo debería poder clonar y correr sin sorpresas inmediatas. |
+| Ramas por pregunta (`feature/heat-definitions`) | Facilita revisiones atómicas y rollbacks puntuales. |
+| Commits atómicos con mensaje imperativo breve | Historia legible para bisectar errores. |
+
+### Plantilla de mensaje de commit {.unnumbered}
+
+```
+Ámbito: acción en infinitivo (≤ 72 caracteres)
+
+Cuerpo opcional: por qué (contexto científico o técnico)
+```
+
+## Pull requests (PR / merge requests)
+
+1. **Descripción** — pregunta de investigación o bug reproducible.
+2. **Checklist** — `README` actualizado, rutas relativas, sin datos sensibles.
+3. **Revisor asignado** — al menos una lectura cruzada cuando toca `Models/` o export finales.
+
+## Colaboración externa
+
+Los lineamientos indican que cualquiera puede hacer *fork* de repositorios públicos. Si planeas incorporar código externo:
+
+- Documenta la procedencia y licencia en el `README` y en comentarios mínimos en el script importado.
+- Prefiere integración vía PR pequeño antes que copiar archivos masivos sin atribución.
+
+## Entornos reproducibles (resumen)
+
+| Contexto | Herramienta sugerida |
+| --- | --- |
+| R | `renv` + `lockfile` versionado |
+| Python | `requirements.txt` o `pyproject.toml` + versiones fijadas |
+| Mixto | documenta contenedor o entorno Conda **solo** si es estrictamente necesario para no sobrecargar onboarding |
+
+Detalles de estilo de código —tidyverse cuando usemos R, revisiones— están en @sec-codigo.

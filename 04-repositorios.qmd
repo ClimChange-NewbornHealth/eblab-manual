@@ -1,0 +1,53 @@
+# Repositorios y convenciones
+
+## Requisitos comunes (resumen)
+
+Según [Lineamientos_colaboradores](https://github.com/ClimChange-NewbornHealth/Lineamientos_colaboradores):
+
+- Nombres **breves, claros, preferentemente en inglés**.
+- Repositorio **público** salvo excepción contractual demostrable.
+- Archivos obligatorios: `README.md`, `.gitignore`, licencia —recomendación explícita **MIT** por estandarización internacional.
+- Descripción corta en GitHub que contextualice el dataset o pregunta.
+
+## Estructura estándar de carpetas
+
+```
+Code/
+  Process/        # limpieza, construcción de cohortes, joins
+  Descriptive/    # tablas y figuras exploratorias versionadas
+  Models/         # estimaciones principales, sensibilidades
+Output_Analysis/
+  Graphs/
+  Tables/
+.gitignore
+README.md
+LICENSE
+```
+
+Así separamos **lógica computacional** (`Code/`) de **artefactos finales versionables** (`Output_Analysis/`). Evita mezclar scripts intermedios con PDFs o PNG desordenados en la raíz.
+
+## README mínimo útil
+
+Inspirado en la plantilla enlazada desde los lineamientos ([`Plantilla_README.md`](https://github.com/ClimChange-NewbornHealth/Lineamientos_colaboradores/blob/main/Plantilla_README.md)):
+
+1. **Título** — idealmente el del manuscrito o informe vinculado.
+2. **Métricas / financiamiento** — ANID, FONDECYT, IUP, etc.
+3. **Autores y mantenedor activo del repo** — correo de contacto explícito.
+4. **Descripción científica** — antecedentes, objetivos, métodos (puedes extraer del resumen del artículo).
+5. **Datos** — enlace externo + secuencia de scripts a ejecutar *en orden*.
+6. **Resultados destacados** — figuras y tablas numeradas con nota interpretativa breve.
+
+## Ejemplos ilustrativos {.unnumbered}
+
+- [CIIIA-ClimateBirthWeightAnalysis](https://github.com/ClimChange-NewbornHealth/CIIIA-ClimateBirthWeightAnalysis) — ejemplo citado en los lineamientos para ver cómo se articula acceso a datos externos con código.
+
+### Repositorios activos frecuentes
+
+| Repositorio | Rol operativo |
+| --- | --- |
+| [HeatWave_PretermBirth_Chile](https://github.com/ClimChange-NewbornHealth/HeatWave_PretermBirth_Chile) | Olas de calor y prematuridad — referencia R reciente. |
+| [CIIIA-ClimateBirthWeightAnalysis](https://github.com/ClimChange-NewbornHealth/CIIIA-ClimateBirthWeightAnalysis) | Peso al nacer y clima — plantilla de documentación pública. |
+| [Pollution_Kriging](https://github.com/ClimChange-NewbornHealth/Pollution_Kriging) | Interpolación espacial de contaminantes SINCA. |
+| [Imputation_ClimData24](https://github.com/ClimChange-NewbornHealth/Imputation_ClimData24) | Imputación de brechas en series climáticas. |
+
+Explora el resto desde el listado público de la organización en [repositories](https://github.com/orgs/ClimChange-NewbornHealth/repositories).

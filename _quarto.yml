@@ -1,0 +1,33 @@
+project:
+  type: book
+  output-dir: _site
+
+lang: es
+
+book:
+  title: "ClimChange-NewbornHealth · Lab Manual"
+  author: Equipo ClimChange
+  date: today
+  subtitle: Exposición ambiental y salud perinatal
+  site-url: https://climchange-newbornhealth.github.io/lab-manual/
+  repo-url: https://github.com/ClimChange-NewbornHealth/lab-manual/
+  repo-branch: main
+  chapters:
+    - index.qmd
+    - 01-bienvenida.qmd
+    - 02-cultura.qmd
+    - 03-reproducibilidad.qmd
+    - 04-repositorios.qmd
+    - 05-flujos.qmd
+    - 06-codigo.qmd
+    - 07-inicio-rapido.qmd
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: custom.scss
+    toc: true
+    toc-depth: 3
+    number-sections: true

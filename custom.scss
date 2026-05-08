@@ -1,0 +1,57 @@
+/*-- scss:defaults --*/
+// Paleta inspirada en línea visual académica / salud ambiental (tonos fríos + fondo cálido)
+$primary: #2a6974;
+$link-color: #1e5560;
+$font-family-root: "Segoe UI", "Helvetica Neue", system-ui, -apple-system, sans-serif;
+
+// Bootstrap / Cosmo coherence
+$table-bg: transparent;
+$table-hover-bg: rgba($primary, 0.045);
+
+/*-- scss:rules --*/
+:root {
+  --ebl-accent: #{$primary};
+  --ebl-ink: #1c2a31;
+}
+
+body:not(.floating) .page-columns {
+  letter-spacing: 0;
+}
+
+.sidebar-title,
+.quarto-banner {
+  letter-spacing: 0.02em;
+}
+
+h1.title,
+.sidebar-title-main {
+  font-weight: 650;
+  color: var(--ebl-ink);
+}
+
+a {
+  font-weight: 500;
+}
+
+#quarto-sidebar .sidebar-item a.sidebar-link.active {
+  background: rgba($primary, 0.12);
+}
+
+main {
+  line-height: 1.62;
+}
+
+div.callout-important {
+  border-left-width: 0.35rem;
+  border-left-color: $primary;
+}
+
+.navbar {
+  box-shadow: 0 2px 0 rgba(30, 85, 96, 0.08);
+}
+
+[data-bs-theme="dark"] {
+  body {
+    --ebl-ink: #e8eef0;
+  }
+}

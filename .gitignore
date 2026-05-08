@@ -42,8 +42,16 @@ vignettes/*.pdf
 # pkgdown site
 docs/
 
+/_site/
+.quarto/
+
+# Quarto previews
+**/site_libs/
+
 # translation temp files
 po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+/.quarto/

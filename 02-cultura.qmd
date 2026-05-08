@@ -1,0 +1,25 @@
+# Cultura operativa del laboratorio
+
+## Qué esperamos antes de iniciar trabajo autónomo
+
+- **Honestidad intelectual** sobre limitaciones muestrales; evitamos extrapolar efectos donde la identificación es débil solo por conveniencia editorial.
+- **Respeto y colaboración horizontal** incluso cuando el debate es rápido: críticas al código o al diseño estadístico, no a personas.
+- **Transparencia progresiva** —versionamos decisiones reproducibles públicamente siempre que no exista restricción legal contractual expresa.
+
+### Comunicación diaria efectiva {.unnumbered}
+
+1. Estado breve cuando avanzas tareas paralelas (> 48 h sin novedades y bloque esperado ⇒ actualiza).
+2. Prioriza formatos reproducibles cuando compartís resultados preliminares: tablas y figuras en archivos dentro de rutas relativas antes que capturas dispersas difíciles de replicar.
+3. Solicitudes específicas: “¿puedes validar la coherencia de fechas antes del merge?” mejor que mensajes vagos tipo “¿puedes mirar todo?” cuando el bloque temporal es conocido por ambas partes.
+
+## Resolución rápida de conflictos técnico-científicos
+
+| Situación | Flujo sugerido |
+| --- | --- |
+| Discrepancia en una transformación de variable | Abre *issue* con hipótesis + comparación mínima en subrama `compare/<tema>`. |
+| Prioridad de publicación compartida | Documenta roles y orden de autores en el issue de planificación vinculado al artículo o producto. |
+| Incertidumbre ética o de datos sensibles | Detén el flujo de publicación pública y escala vía correo institucional acordado con la coordinación científica. |
+
+## Lenguaje inclusivo {.unnumbered}
+
+Usamos formulaciones neutras o explícitas que no asuman género u origen donde no hay evidencia estadística poblacional necesaria detrás —reforzamos comprensibilidad internacional porque gran parte del código será leído por colaboradores de habla inglesa aun cuando el proyecto sea primariamente en español.

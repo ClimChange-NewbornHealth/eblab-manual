@@ -1,0 +1,27 @@
+# Bienvenida al equipo
+
+## Misión {.unnumbered}
+
+Avanzamos evidencia reproducible sobre **cómo distintos estresores climáticos y ambientales** se asocian a resultados neonatales tempranos, en diálogo con otros equipos locales e internacionales. Combinamos epidemiología, datos espaciales o climáticos públicos cuando corresponden, y modelaje estadístico transparente cuando la pregunta lo requiere.
+
+## Coordinación {.unnumbered}
+
+| Rol | Correo electrónico | Notas ejecutivas |
+| --- | --- | --- |
+| Investigación líder / equipo de salud maternal-perinatal | [estela.blanco\@uc.cl](mailto:estela.blanco@uc.cl) | Preguntas científicas, priorización de proyectos públicos ligados al laboratorio. |
+| Soporte reproducibilidad · gestión repos | [jdconejeros\@uc.cl](mailto:jdconejeros@uc.cl) | *Research collaborator – repository manager* según los lineamientos de la organización. |
+
+Enlaces útiles externos al manual:
+
+- [Organización GitHub · ClimChange-NewbornHealth](https://github.com/ClimChange-NewbornHealth) — visión panorámica y contacto rápido.
+- [Laboratorio público Estela Blanco · sitio académico](https://estelablanco.cl/) — trayectoria, proyectos destacados y canales externos.
+
+### Expectativas mínimas
+
+1. Registrar acuerdos de datos compartidos (origen temporal, filtros poblacionales, actualizaciones) **antes de** ejecutar código productivo irreversible sobre tablas grandes.
+2. Utilizar comunicación asíncrona clara cuando el equipo está distribuido: resumen + hallazgos + preguntas concretas. Evitar hilos paralelos redundantes cuando la decisión debe quedar registrada.
+3. Reconocimiento cruzado: si reutilizas una función ajena dentro de algo que publicaras, mención explícita al autor principal en el código y en cualquier resultado derivado compartido.
+
+## Relación entre capítulos y lineamientos oficiales
+
+Los detalles de **estructura de carpetas, licencia README y datos externos obligatorios** viven textualmente —y se actualizan— en [`Lineamientos_colaboradores`](https://github.com/ClimChange-NewbornHealth/Lineamientos_colaboradores/tree/main/README.md). Todo lo siguiente lo resume operativamente pero no lo reemplaza.

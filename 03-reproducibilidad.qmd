@@ -1,0 +1,28 @@
+# Reproducibilidad práctica
+
+## Principios ejecutivos {.unnumbered}
+
+1. **`git` registra historia** · **Los datos grandes no viven en repos públicos**.
+2. **Relativizar rutas** · Nada de rutas locales absolutas `C:\Users\...` dentro de repos compartibles.
+3. **Documentación mínima** · `README.md` cuenta la historia suficiente para que otro equipo entienda *qué* corre y *para qué* sin ejecutar línea uno.
+
+Los lineamientos reiteran esta premisa institucional: en el repo solo estarán disponibles todos los **códigos necesarios**, mientras los **datasets de trabajo voluminosos deben estar enlazados externamente**: por ejemplo Dropbox o Google Drive institucional, con texto explícito de acceso dentro del `README`.
+
+## ¿Qué califica como “reproducible” aquí?
+
+| Nivel | Qué implica | Cuándo lo exigimos |
+| --- | --- | --- |
+| **Nivel A — Análisis interno** | Script + entorno documentado + hash de versión de paquetes | Trabajo de tesis / preprints internos compartidos en el grupo. |
+| **Nivel B — Público asociado a artículo** | Nivel A + instrucciones explícitas de descarga de datos públicos o enlaces versionados + salidas en `Output_Analysis` | Manuscritos y reportes con DOI o preprint activo. |
+
+## Validación cruzada breve
+
+Antes de considerar un análisis “cerrado”:
+
+1. **Re-ejecución en máquina limpia** (contenedor, renv, o entorno virtual equivalente) por alguien que no escribió el pipeline original.
+2. **Paridad de filas** entre insumos y productos agregados —conteo de unidades de análisis consistente post join.
+3. **Figuras exportadas comparables** —hash o diff visual razonable entre salidas finales y las regeneradas.
+
+## Privacidad y datos identificables
+
+Nunca subas identificadores directos o tablas crudas con potencial reidentificación a repositorios públicos. Si la credencial de acceso vive en un `.Renviron` o `.env`, **está en `.gitignore`** y el `README` indica qué variables se requieren sin revelar secretos.

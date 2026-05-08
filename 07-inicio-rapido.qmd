@@ -1,0 +1,39 @@
+# Inicio rápido (checklist)
+
+## Día 0 — Accesos
+
+- [ ] Cuenta GitHub vinculada al correo institucional.
+- [ ] Invitación a la organización (si aplica) o *fork* planificado de un repo público existente.
+- [ ] Lectura de [Lineamientos_colaboradores](https://github.com/ClimChange-NewbornHealth/Lineamientos_colaboradores) (15 minutos).
+
+## Día 1 — Entorno local
+
+- [ ] Instala [Quarto](https://quarto.org/docs/get-started/) si editarás este manual o documentación similar.
+- [ ] R ≥ 4.2 o Python acorde al repo objetivo + VS Code / RStudio / Positron.
+- [ ] Configura `git` con nombre público y correo verificado.
+
+## Día 2 — Primer repositorio
+
+1. Clona un repo de referencia (por ejemplo [CIIIA-ClimateBirthWeightAnalysis](https://github.com/ClimChange-NewbornHealth/CIIIA-ClimateBirthWeightAnalysis)).
+2. Crea rama `setup/<tu-iniciales>`.
+3. Verifica que el `README` describe con precisión el orden de scripts.
+4. Ejecuta al menos un script de `Descriptive/` con datos de prueba o submuestra si el dataset completo no cabe localmente.
+
+## Antes de publicar resultados
+
+- [ ] `README` con sección de datos externos + financiamiento.
+- [ ] `Output_Analysis` contiene solo versiones finales acordadas.
+- [ ] Sin credenciales ni tablas identificables en el historial (`git log`).
+
+## Publicar actualizaciones de este manual
+
+```bash
+quarto preview   # revisión local
+quarto render    # genera _site/
+```
+
+Tras `git push` a `main`, el flujo [`.github/workflows/publish.yml`](https://github.com/ClimChange-NewbornHealth/lab-manual/blob/main/.github/workflows/publish.yml) despliega vía `gh-pages`. La URL pública destino es:
+
+[https://climchange-newbornhealth.github.io/lab-manual/](https://climchange-newbornhealth.github.io/lab-manual/)
+
+En **Settings → Pages** del repositorio `lab-manual`, confirma que la fuente sea la rama `gh-pages` y carpeta `/ (root)`.
