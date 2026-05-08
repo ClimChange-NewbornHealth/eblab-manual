@@ -1,0 +1,31 @@
+# Practical reproducibility
+
+::: {.callout-important}
+## Golden rule
+**`git` tracks code history; bulky data does not belong in public repos.** Document external access in the `README`.
+:::
+
+## Principles
+
+1. **`git` for history** · **Large data off GitHub**.
+2. **Relative paths** · Avoid machine-specific absolute paths in shared repos.
+3. **`README`** · Enough story that someone understands *what* runs and *why* without running line 1.
+
+Per org guidelines: repositories host **code**; **analysis tables** are linked externally (e.g. Dropbox, Google Drive) with explicit access notes in the `README`.
+
+## What “reproducible” means here
+
+| Level | Meaning | When required |
+| --- | --- | --- |
+| **A — Internal** | Script + documented environment + package versions | Thesis / internal preprints in the group. |
+| **B — Public / paper** | A + public data download steps + `Output_Analysis` | Manuscripts, reports with DOI or active preprint. |
+
+## Quick validation
+
+1. **Clean-machine rerun** (container, `renv`, or virtualenv) by someone who did not write the pipeline.
+2. **Row parity** between inputs and aggregated outputs after joins.
+3. **Comparable figures** between final exports and regenerated runs.
+
+## Privacy
+
+Never push direct identifiers or re-identifiable raw tables to public repos. Keep secrets in `.Renviron` / `.env` (gitignored); list required variables in the `README` without exposing values.

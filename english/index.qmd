@@ -1,0 +1,27 @@
+# Preface {.unnumbered}
+
+**EB-Lab** ([Estela Blanco](https://estelablanco.cl/), together with the [ClimChange-NewbornHealth](https://github.com/ClimChange-NewbornHealth) GitHub organization) focuses on **environmental exposure and perinatal health** in Chile and comparable settings. This manual summarizes how we collaborate, version analyses, and publish code so work stays reviewable and reproducible.
+
+::: {.callout-note}
+## Living document
+The manual evolves. If anything disagrees with the [official contributor guidelines](https://github.com/ClimChange-NewbornHealth/Lineamientos_colaboradores), follow that repository and suggest an update here via **Source** in the sidebar.
+:::
+
+It draws inspiration from the [Benjamin-Chung lab manual](https://jadebc.github.io/lab-manual/) and modular resources such as Yale DSDE’s [*Book of Workshops*](https://ysph-dsde.github.io/Book-of-Workshops/).
+
+## How to use this manual {.unnumbered}
+
+Each chapter is a quick decision or checklist before `git push`:
+
+- Who should read it and when.
+- Minimum standards before independent work.
+- Links to guidelines and reference repositories.
+
+For the Spanish edition, use **Español** in the top bar.
+
+## Scope {.unnumbered}
+
+::: {.callout-important}
+## Limits
+This manual **does not replace** institutional protocols (ethics, consent, administrative confidentiality, etc.). It **does set minimum technical standards**: clear `README`, MIT license, large data off-repo, relative paths.
+:::

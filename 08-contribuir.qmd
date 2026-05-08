@@ -1,0 +1,89 @@
+# Cómo contribuir (proyectos y manual)
+
+Este capítulo condensa el instructivo de [Lineamientos para colaboradores](https://github.com/ClimChange-NewbornHealth/Lineamientos_colaboradores) y enlaza las figuras originales del repositorio con copias servidas desde este manual.
+
+::: {.callout-important}
+## Antes de publicar nada en GitHub
+No subas **datos identificables** ni credenciales. Los volúmenes grandes van **fuera del repositorio** (p. ej. Dropbox o Google Drive) y se enlazan desde el `README`.
+:::
+
+## Nuevos repositorios
+
+### Paso 1: crear el repositorio
+
+![Paso 1 — Crear repositorio en GitHub](assets/images/lineamientos/repo1.png)
+
+### Paso 2: definir metadatos y archivos base
+
+![Paso 2 — Ajustes recomendados del repositorio](assets/images/lineamientos/repo2.png)
+
+Cada repositorio del ecosistema **EB-Lab** (organización [ClimChange-NewbornHealth](https://github.com/ClimChange-NewbornHealth)) debe cumplir:
+
+- Nombres **breves** y, de ser posible, en **inglés**.
+- **Descripción** corta con contexto científico.
+- Visibilidad **pública** (salvo restricción contractual documentada).
+- Archivos obligatorios: **`README.md`**, **`.gitignore`**, **licencia** (recomendación org: **MIT**).
+
+### Paso 3: clonar y trabajar en local
+
+![Paso 3 — Clonar y abrir en el IDE](assets/images/lineamientos/repo3.png)
+
+Puedes usar RStudio, Visual Studio Code, Positron u otro flujo que respete `git` y rutas relativas.
+
+::: {.callout-tip}
+## Pull requests pequeños
+Prefiere integrar cambios en **ramas cortas** y **PR revisados** antes de mezclar en `main`, sobre todo en `Models/` y en salidas finales.
+:::
+
+## Estructura de carpetas esperada
+
+```
+Code/
+  Process/
+  Descriptive/
+  Models/
+Output_Analysis/
+  Graphs/
+  Tables/
+.gitignore
+README.md
+LICENSE
+```
+
+## Contenido mínimo del README
+
+![Esquema sugerido del README](assets/images/lineamientos/readme.png)
+
+1. **Título** (idealmente el del artículo o producto).
+2. **Métricas y financiamiento** (plantilla en el repo de lineamientos).
+3. **Autores** con correo del autor principal, co-investigadores y **mantenedor/a del repositorio**.
+4. **Descripción** (antecedentes, objetivos, métodos, discusión — puede basarse en el abstract).
+5. **Acceso a datos** con enlace externo y **orden de scripts** a ejecutar.
+6. **Resultados principales** con figuras y tablas numeradas y notas si aplica.
+
+Plantilla: [Plantilla_README.md](https://github.com/ClimChange-NewbornHealth/Lineamientos_colaboradores/blob/main/Plantilla_README.md).
+
+## Datos fuera del repositorio
+
+En el **repo** van los **códigos** para replicar; las **tablas voluminosas** se enlazan externamente.
+
+::: {.callout-warning}
+## Capacidad y privacidad
+Subir bases completas a GitHub satura el repo y aumenta el riesgo de filtrar metadatos sensibles. Mantén los enlaces versionados y el control de acceso **fuera** del historial público de `git`.
+:::
+
+![Datos en almacenamiento externo (ejemplo 1)](assets/images/lineamientos/data1.png)
+
+![Datos en almacenamiento externo (ejemplo 2)](assets/images/lineamientos/data2.png)
+
+Ejemplo de buenas prácticas en README y datos: [CIIIA-ClimateBirthWeightAnalysis](https://github.com/ClimChange-NewbornHealth/CIIIA-ClimateBirthWeightAnalysis).
+
+## Contribuir a **este** manual (Quarto)
+
+1. Haz *fork* o trabaja con permiso de escritura en [`eblab-manual`](https://github.com/ClimChange-NewbornHealth/eblab-manual).
+2. Edita los `.qmd` o añade capítulos en `_quarto.yml`.
+3. Idioma inglés: carpeta `english/` (ver enlace **English** en la barra superior); vuelve a renderizar **español e inglés** antes de abrir PR.
+4. Comprueba localmente `quarto render` y, si aplica, `cd english && quarto render`.
+5. Abre un **pull request** describiendo el cambio y enlazando issues si existen.
+
+Dudas de acceso y gestión de repositorios: **jdconejeros\@uc.cl** (*Research Collaborator – Repository Manager*).

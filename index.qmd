@@ -1,20 +1,29 @@
 # Prefacio {.unnumbered}
 
-[ClimChange-NewbornHealth](https://github.com/ClimChange-NewbornHealth) agrupa trabajo sobre **exposición ambiental y salud perinatal** en Chile y contextos comparables. Este manual sintetiza de forma ejecutiva cómo colaboramos, versionamos análisis y publicamos código de manera consistente para que los resultados sean revisables y replicables.
+El **EB-Lab** (línea de investigación de [Estela Blanco](https://estelablanco.cl/), en red con la organización [ClimChange-NewbornHealth](https://github.com/ClimChange-NewbornHealth)) agrupa trabajo sobre **exposición ambiental y salud perinatal** en Chile y contextos comparables. Este manual sintetiza de forma ejecutiva cómo colaboramos, versionamos análisis y publicamos código de manera consistente para que los resultados sean revisables y replicables.
 
-El documento está inspirado por manuales públicos como el [manual del laboratorio Benjamin-Chung](https://jadebc.github.io/lab-manual/) —comunicación transparente y flujos computacionales— y por la pedagogía tipo “manual / taller” libremente disponible como el [*Book of Workshops*](https://ysph-dsde.github.io/Book-of-Workshops/) de Yale DSDE: capítulos modulares, orientados a práctica reproducible más que a filosofía prolongada.
+::: {.callout-note}
+## Documento vivo
+Este manual se actualiza con el tiempo. Si detectas desalineación con los [lineamientos oficiales](https://github.com/ClimChange-NewbornHealth/Lineamientos_colaboradores), prioriza ese repositorio y abre una sugerencia de mejora en el sitio del manual (enlace **Source** en la barra lateral).
+:::
 
-## Cómo usar este manual {#sec-uso-manual .unnumbered}
+El documento está inspirado por manuales públicos como el [manual del laboratorio Benjamin-Chung](https://jadebc.github.io/lab-manual/) y por recursos modulares como el [*Book of Workshops*](https://ysph-dsde.github.io/Book-of-Workshops/) de Yale DSDE: capítulos breves, orientados a práctica reproducible.
+
+## Cómo usar este manual {.unnumbered}
 
 Cada capítulo es una decisión rápida o una lista revisable antes de hacer `git push`:
 
 - Quién debe leer cada capítulo y cuándo.
-- Principios mínimos imprescindibles antes de iniciar trabajo autónomo.
-- Enlaces a lineamientos oficiales y repositorios de referencia dentro de nuestra organización.
+- Principios mínimos antes de trabajo autónomo.
+- Enlaces a lineamientos y repositorios de referencia.
 
-La versión oficial de trabajo en equipo y estructuras de proyecto que complementa este libro está centralizada en [Lineamientos para colaboradores](https://github.com/ClimChange-NewbornHealth/Lineamientos_colaboradores). Si encuentras divergencia entre ambos, prioriza ese repositorio y abre una sugerencia de actualización al manual desde la propia página (enlace **Source**).
+La versión oficial de trabajo en equipo y estructuras de proyecto complementaria está en [Lineamientos para colaboradores](https://github.com/ClimChange-NewbornHealth/Lineamientos_colaboradores).
 
 ## Alcance práctico {.unnumbered}
 
-- **Este manual no sustituye** protocolos institucionalmente aprobados (ética / consentimiento / confidencialidad administrativa UC y afines).
-- **Sí establece estándares técnicos mínimos** para que colaboradores y proyectos paralelos interoperen sin fricciones: descripción abierta (`README`), licencia MIT, ubicación definida para datos grandes y rutas relativas reproducibles dentro de repos.
+::: {.callout-important}
+## Límites del manual
+**No sustituye** protocolos institucionales (ética, consentimiento, confidencialidad administrativa UC y afines). **Sí fija estándares técnicos mínimos** para interoperar: `README` claro, licencia MIT, datos grandes fuera del repo y rutas relativas reproducibles.
+:::
+
+- **Versión en inglés:** usa el enlace **English** en la barra superior (mismo contenido, traducido en carpeta `english/`).

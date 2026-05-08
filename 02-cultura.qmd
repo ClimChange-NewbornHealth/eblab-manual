@@ -1,5 +1,10 @@
 # Cultura operativa del laboratorio
 
+::: {.callout-note}
+## Código de conducta implícito
+Tratamos el debate técnico como revisión de ideas y de código, no de personas. La crítica va al diseño del estudio o al script, con tono respetuoso y accionable.
+:::
+
 ## Qué esperamos antes de iniciar trabajo autónomo
 
 - **Honestidad intelectual** sobre limitaciones muestrales; evitamos extrapolar efectos donde la identificación es débil solo por conveniencia editorial.

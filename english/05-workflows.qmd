@@ -1,0 +1,45 @@
+# Git workflows
+
+::: {.callout-caution}
+## Branches and `main`
+Avoid large unreviewed pushes to `main` when collaborators are active; prefer PRs with reproducible context.
+:::
+
+## Branches and commits
+
+| Practice | Reason |
+| --- | --- |
+| Stable `main` | External collaborators should clone and run without surprise. |
+| Feature branches (`feature/heat-definitions`) | Atomic review and rollback. |
+| Imperative commit subjects | Readable history for bisecting. |
+
+### Commit template
+
+```
+Scope: verb in infinitive (≤ 72 chars)
+
+Optional body: why (science or tech context)
+```
+
+## Pull requests
+
+1. **Description** — question or reproducible bug.
+2. **Checklist** — `README` updated, relative paths, no secrets.
+3. **Reviewer** — especially for `Models/` and final exports.
+
+## External collaboration
+
+Forks are expected. Importing external code:
+
+- Document provenance + license in `README` + short code comments.
+- Prefer small PRs over bulk copy-paste without attribution.
+
+## Repro environments (summary)
+
+| Context | Tooling |
+| --- | --- |
+| R | `renv` + committed lockfile |
+| Python | Pinned `requirements.txt` / `pyproject.toml` |
+| Mixed | Containers/Conda only if truly needed |
+
+Coding style details — tidyverse norms in R, reviews — see @sec-code.

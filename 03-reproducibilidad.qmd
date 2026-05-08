@@ -1,6 +1,11 @@
 # Reproducibilidad práctica
 
-## Principios ejecutivos {.unnumbered}
+::: {.callout-important}
+## Regla de oro
+**`git` conserva el historial del código; los datos voluminosos no viven en el repositorio público.** Documenta acceso externo en el `README`.
+:::
+
+## Principios ejecutivos
 
 1. **`git` registra historia** · **Los datos grandes no viven en repos públicos**.
 2. **Relativizar rutas** · Nada de rutas locales absolutas `C:\Users\...` dentro de repos compartibles.

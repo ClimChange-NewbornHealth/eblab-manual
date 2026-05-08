@@ -1,5 +1,10 @@
 # Repositorios y convenciones
 
+::: {.callout-tip}
+## Plantilla README
+Usa la [Plantilla_README](https://github.com/ClimChange-NewbornHealth/Lineamientos_colaboradores/blob/main/Plantilla_README.md) del repo de lineamientos como checklist antes del primer release público.
+:::
+
 ## Requisitos comunes (resumen)
 
 Según [Lineamientos_colaboradores](https://github.com/ClimChange-NewbornHealth/Lineamientos_colaboradores):

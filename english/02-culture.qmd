@@ -1,0 +1,30 @@
+# Lab culture
+
+::: {.callout-note}
+## Implicit code of conduct
+Critique ideas and code, not people. Feedback should be respectful and actionable.
+:::
+
+## Before autonomous work
+
+- **Intellectual honesty** about design limits; avoid overstating identification.
+- **Respect and collaboration** even in fast debate.
+- **Progressive transparency** — version reproducible decisions unless legally restricted.
+
+### Day-to-day communication
+
+1. Post short status if parallel tasks stall (>48h) and someone is waiting.
+2. Prefer reproducible artifacts (tables, figures on disk) over one-off screenshots.
+3. Be specific in requests (“validate date logic before merge?” not “can you look at everything?”).
+
+## Resolving scientific/technical disagreements
+
+| Situation | Suggested flow |
+| --- | --- |
+| Variable transform dispute | Open an issue + minimal comparison branch `compare/<topic>`. |
+| Authorship / release priority | Document roles and author order in the planning issue tied to the product. |
+| Ethics or sensitive data uncertainty | Pause public release; escalate via agreed institutional channels. |
+
+## Inclusive language
+
+Use neutral or explicit wording; many readers are international even when the project is Spanish-first.

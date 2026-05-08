@@ -29,11 +29,12 @@
 
 ```bash
 quarto preview   # revisión local
-quarto render    # genera _site/
+quarto render    # genera _site/ (español)
+cd english && quarto render && cd ..   # añade _site/en/ (inglés)
 ```
 
-Tras `git push` a `main`, el flujo [`.github/workflows/publish.yml`](https://github.com/ClimChange-NewbornHealth/lab-manual/blob/main/.github/workflows/publish.yml) despliega vía `gh-pages`. La URL pública destino es:
+Tras `git push` a `main`, el flujo [`.github/workflows/publish.yml`](https://github.com/ClimChange-NewbornHealth/eblab-manual/blob/main/.github/workflows/publish.yml) despliega vía `gh-pages`. La URL pública es:
 
-[https://climchange-newbornhealth.github.io/lab-manual/](https://climchange-newbornhealth.github.io/lab-manual/)
+[https://climchange-newbornhealth.github.io/eblab-manual/](https://climchange-newbornhealth.github.io/eblab-manual/)
 
-En **Settings → Pages** del repositorio `lab-manual`, confirma que la fuente sea la rama `gh-pages` y carpeta `/ (root)`.
+En **Settings → Pages** del repositorio `eblab-manual`, la fuente debe ser la rama `gh-pages` y carpeta `/ (root)`.

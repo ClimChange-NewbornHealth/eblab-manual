@@ -1,5 +1,10 @@
 # Flujos de trabajo con Git
 
+::: {.callout-caution}
+## Ramas y `main`
+Evita subir cambios grandes a `main` sin revisión cuando el equipo activo lo requiere; prefiere PR con contexto reproducible.
+:::
+
 ## Ramas y commits
 
 | Práctica | Motivo |

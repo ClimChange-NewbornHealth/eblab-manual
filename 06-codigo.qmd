@@ -1,8 +1,13 @@
 # Estándares de código {#sec-codigo}
 
+::: {.callout-note}
+## Lenguaje principal
+La mayoría de los pipelines históricos están en **R**; algunos proyectos usan **Python**. Los mismos principios de estilo y revisión aplican a ambos.
+:::
+
 ## Lenguajes predominantes
 
-La mayoría de pipelines históricos están en **R**; algunos proyectos recientes incorporan **Python** (por ejemplo flujos geoespaciales o de descarga automatizada). Los principios siguientes aplican a ambos.
+Algunos proyectos recientes incorporan **Python** (geoespacial, descarga automatizada); más abajo aplican mismos estándares de revisión que en **R**.
 
 ## Estilo y legibilidad
 

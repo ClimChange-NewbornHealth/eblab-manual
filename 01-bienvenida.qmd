@@ -1,20 +1,27 @@
 # Bienvenida al equipo
 
-## Misión {.unnumbered}
+El **EB-Lab** trabaja en red con proyectos hospedados bajo la organización [ClimChange-NewbornHealth](https://github.com/ClimChange-NewbornHealth) en GitHub. El sitio académico del laboratorio es [estelablanco.cl](https://estelablanco.cl/).
+
+## Misión
 
 Avanzamos evidencia reproducible sobre **cómo distintos estresores climáticos y ambientales** se asocian a resultados neonatales tempranos, en diálogo con otros equipos locales e internacionales. Combinamos epidemiología, datos espaciales o climáticos públicos cuando corresponden, y modelaje estadístico transparente cuando la pregunta lo requiere.
 
-## Coordinación {.unnumbered}
+## Coordinación
 
 | Rol | Correo electrónico | Notas ejecutivas |
 | --- | --- | --- |
-| Investigación líder / equipo de salud maternal-perinatal | [estela.blanco\@uc.cl](mailto:estela.blanco@uc.cl) | Preguntas científicas, priorización de proyectos públicos ligados al laboratorio. |
-| Soporte reproducibilidad · gestión repos | [jdconejeros\@uc.cl](mailto:jdconejeros@uc.cl) | *Research collaborator – repository manager* según los lineamientos de la organización. |
+| Investigación líder / salud maternal-perinatal | [estela.blanco\@uc.cl](mailto:estela.blanco@uc.cl) | Preguntas científicas y priorización de proyectos públicos ligados al laboratorio. |
+| Reproducibilidad · gestión de repositorios | [jdconejeros\@uc.cl](mailto:jdconejeros@uc.cl) | *Research collaborator – repository manager* en los lineamientos de la organización. |
 
-Enlaces útiles externos al manual:
+::: {.callout-tip}
+## ORCID
+Perfiles: [Estela Blanco](https://orcid.org/0000-0002-6232-9210) · [José Daniel Conejeros](https://orcid.org/0000-0003-3402-4361).
+:::
 
-- [Organización GitHub · ClimChange-NewbornHealth](https://github.com/ClimChange-NewbornHealth) — visión panorámica y contacto rápido.
-- [Laboratorio público Estela Blanco · sitio académico](https://estelablanco.cl/) — trayectoria, proyectos destacados y canales externos.
+Enlaces útiles:
+
+- [Organización GitHub · ClimChange-NewbornHealth](https://github.com/ClimChange-NewbornHealth)
+- [Sitio del laboratorio](https://estelablanco.cl/)
 
 ### Expectativas mínimas
 

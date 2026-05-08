@@ -1,0 +1,53 @@
+# Repositories and conventions
+
+::: {.callout-tip}
+## README template
+Use the [template README](https://github.com/ClimChange-NewbornHealth/Lineamientos_colaboradores/blob/main/Plantilla_README.md) as a checklist before the first public release.
+:::
+
+## Common requirements (summary)
+
+From [Lineamientos_colaboradores](https://github.com/ClimChange-NewbornHealth/Lineamientos_colaboradores):
+
+- **Short names**, preferably **English**.
+- **Public** repositories unless a contract explicitly forbids it.
+- Required files: `README.md`, `.gitignore`, license — **MIT** recommended.
+- Short GitHub description with scientific context.
+
+## Standard layout
+
+```
+Code/
+  Process/
+  Descriptive/
+  Models/
+Output_Analysis/
+  Graphs/
+  Tables/
+.gitignore
+README.md
+LICENSE
+```
+
+## README essentials
+
+Based on the org template:
+
+1. **Title** — ideally the paper or product title.
+2. **Metrics / funding** — ANID, FONDECYT, IUP, etc.
+3. **Authors + active maintainer** — email for contact.
+4. **Scientific description** — background, aims, methods (abstract is enough to start).
+5. **Data** — external link + **script execution order**.
+6. **Main results** — numbered figures/tables with short notes.
+
+## Examples
+
+- [CIIIA-ClimateBirthWeightAnalysis](https://github.com/ClimChange-NewbornHealth/CIIIA-ClimateBirthWeightAnalysis)
+
+| Repo | Role |
+| --- | --- |
+| [HeatWave_PretermBirth_Chile](https://github.com/ClimChange-NewbornHealth/HeatWave_PretermBirth_Chile) | Heat waves & prematurity |
+| [Pollution_Kriging](https://github.com/ClimChange-NewbornHealth/Pollution_Kriging) | SINCA pollution surfaces |
+| [Imputation_ClimData24](https://github.com/ClimChange-NewbornHealth/Imputation_ClimData24) | Climate gaps imputation |
+
+More: [organization repositories](https://github.com/orgs/ClimChange-NewbornHealth/repositories).

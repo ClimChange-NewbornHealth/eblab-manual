@@ -1,0 +1,40 @@
+# Quick start (checklist)
+
+## Day 0 — Access
+
+- [ ] GitHub account with institutional email.
+- [ ] Org invite (if any) or planned fork.
+- [ ] Skim [Lineamientos_colaboradores](https://github.com/ClimChange-NewbornHealth/Lineamientos_colaboradores) (~15 min).
+
+## Day 1 — Environment
+
+- [ ] Install [Quarto](https://quarto.org/docs/get-started/) if you will edit this manual.
+- [ ] R ≥ 4.2 or project-appropriate Python + VS Code / RStudio / Positron.
+- [ ] Configure `git` name + verified email.
+
+## Day 2 — First repo
+
+1. Clone a reference repo (e.g. [CIIIA-ClimateBirthWeightAnalysis](https://github.com/ClimChange-NewbornHealth/CIIIA-ClimateBirthWeightAnalysis)).
+2. Branch `setup/<your-initials>`.
+3. Confirm `README` script order matches reality.
+4. Run at least one `Descriptive/` script on a test slice if full data is heavy.
+
+## Before publishing findings
+
+- [ ] `README` documents external data + funding.
+- [ ] `Output_Analysis` only has agreed finals.
+- [ ] No secrets or identifiable tables in history.
+
+## Updating this manual
+
+```bash
+quarto preview
+quarto render               # Spanish → _site/
+cd english && quarto render && cd ..   # English → _site/en/
+```
+
+On `push` to `main`, [.github/workflows/publish.yml](https://github.com/ClimChange-NewbornHealth/eblab-manual/blob/main/.github/workflows/publish.yml) publishes `gh-pages`.
+
+Public URL: [https://climchange-newbornhealth.github.io/eblab-manual/](https://climchange-newbornhealth.github.io/eblab-manual/)
+
+**Settings → Pages** should use branch `gh-pages`, folder `/ (root)`.

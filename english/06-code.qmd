@@ -1,0 +1,43 @@
+# Code standards {#sec-code}
+
+::: {.callout-note}
+## Languages
+Most historical pipelines use **R**; some newer work uses **Python**. The same principles apply.
+:::
+
+## Languages at a glance
+
+Some projects lean on **Python** for geospatial or automated ingestion; standards below apply to both.
+
+## Style
+
+1. **Short functions**, verb names (`compute_exposure_lag`).
+2. **Comments explain “why”**, not trivial `dplyr` steps; document epidemiologic assumptions that matter.
+3. **Shared constants first** — clinical thresholds, admin cut-offs, shapefile versions in `config.*`.
+
+## Folder roles
+
+| `Code/` | Typical content |
+| --- | --- |
+| `Process/` | Ingestion, cleaning, exposures. |
+| `Descriptive/` | Exploratory tables/figures (non-final). |
+| `Models/` | Main estimates, sensitivities. |
+
+### Outputs
+
+- Finals → `Output_Analysis/Graphs` & `Tables`.
+- Avoid absolute paths; use `here::here()` (R) or equivalent.
+
+## Review checklist
+
+| Check | Before merge |
+| --- | --- |
+| Formatter/linter (`styler`, `ruff`, …) | Yes |
+| Documented runtime | Yes |
+| New deps explained in `README` | Yes |
+
+## Generative AI
+
+- **Verify** numbers on toy cases.
+- **Never paste** identifiable records into public prompts.
+- **Disclose** in the PR comment if a large block came from an assistant tool.

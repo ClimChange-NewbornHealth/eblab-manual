@@ -1,18 +1,15 @@
 project:
   type: book
-  output-dir: _site
+  output-dir: ../_site/en
 
-lang: es
-
-language:
-  title-block-published: "Última actualización"
+lang: en
 
 book:
-  title: "EB-Lab · Manual de trabajo"
-  subtitle: Salud ambiental neonatal · exposición y salud perinatal
+  title: "EB-Lab · Lab manual"
+  subtitle: Environmental health in the neonatal period · exposure and perinatal health
   date: today
-  cover-image: assets/ebb-logo.png
-  site-url: https://climchange-newbornhealth.github.io/eblab-manual/
+  cover-image: ../assets/ebb-logo.png
+  site-url: https://climchange-newbornhealth.github.io/eblab-manual/en/
   repo-url: https://github.com/ClimChange-NewbornHealth/eblab-manual/
   repo-branch: main
 
@@ -26,18 +23,18 @@ book:
 
   navbar:
     title: EB-Lab
-    logo: assets/ebb-logo.png
+    logo: ../assets/ebb-logo.png
     right:
-      - text: English
-        href: en/index.html
+      - text: Español
+        href: ../index.html
 
   sidebar:
     style: docked
 
   page-footer:
-    left: "EB-Lab"
+    left: EB-Lab
     center:
-      - text: DOI (pendiente en Zenodo)
+      - text: DOI (pending Zenodo record)
         href: https://zenodo.org/
     right:
       - text: estelablanco.cl
@@ -45,22 +42,22 @@ book:
 
   chapters:
     - index.qmd
-    - 01-bienvenida.qmd
-    - 02-cultura.qmd
-    - 03-reproducibilidad.qmd
-    - 04-repositorios.qmd
-    - 05-flujos.qmd
-    - 06-codigo.qmd
-    - 07-inicio-rapido.qmd
-    - 08-contribuir.qmd
+    - 01-welcome.qmd
+    - 02-culture.qmd
+    - 03-reproducibility.qmd
+    - 04-repositories.qmd
+    - 05-workflows.qmd
+    - 06-code.qmd
+    - 07-quickstart.qmd
+    - 08-contributing.qmd
 
 format:
   html:
     theme:
       light: cosmo
       dark: darkly
-    css: custom.scss
-    favicon: assets/ebb-logo.png
+    css: ../custom.scss
+    favicon: ../assets/ebb-logo.png
     toc: true
     toc-depth: 3
     number-sections: false
