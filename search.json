@@ -1,0 +1,362 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ClimChange-NewbornHealth · Lab Manual",
+    "section": "",
+    "text": "Prefacio\nClimChange-NewbornHealth agrupa trabajo sobre exposición ambiental y salud perinatal en Chile y contextos comparables. Este manual sintetiza de forma ejecutiva cómo colaboramos, versionamos análisis y publicamos código de manera consistente para que los resultados sean revisables y replicables.\nEl documento está inspirado por manuales públicos como el manual del laboratorio Benjamin-Chung —comunicación transparente y flujos computacionales— y por la pedagogía tipo “manual / taller” libremente disponible como el Book of Workshops de Yale DSDE: capítulos modulares, orientados a práctica reproducible más que a filosofía prolongada.",
+    "crumbs": [
+      "Prefacio"
+    ]
+  },
+  {
+    "objectID": "index.html#sec-uso-manual",
+    "href": "index.html#sec-uso-manual",
+    "title": "ClimChange-NewbornHealth · Lab Manual",
+    "section": "Cómo usar este manual",
+    "text": "Cómo usar este manual\nCada capítulo es una decisión rápida o una lista revisable antes de hacer git push:\n\nQuién debe leer cada capítulo y cuándo.\nPrincipios mínimos imprescindibles antes de iniciar trabajo autónomo.\nEnlaces a lineamientos oficiales y repositorios de referencia dentro de nuestra organización.\n\nLa versión oficial de trabajo en equipo y estructuras de proyecto que complementa este libro está centralizada en Lineamientos para colaboradores. Si encuentras divergencia entre ambos, prioriza ese repositorio y abre una sugerencia de actualización al manual desde la propia página (enlace Source).",
+    "crumbs": [
+      "Prefacio"
+    ]
+  },
+  {
+    "objectID": "index.html#alcance-práctico",
+    "href": "index.html#alcance-práctico",
+    "title": "ClimChange-NewbornHealth · Lab Manual",
+    "section": "Alcance práctico",
+    "text": "Alcance práctico\n\nEste manual no sustituye protocolos institucionalmente aprobados (ética / consentimiento / confidencialidad administrativa UC y afines).\nSí establece estándares técnicos mínimos para que colaboradores y proyectos paralelos interoperen sin fricciones: descripción abierta (README), licencia MIT, ubicación definida para datos grandes y rutas relativas reproducibles dentro de repos.",
+    "crumbs": [
+      "Prefacio"
+    ]
+  },
+  {
+    "objectID": "01-bienvenida.html",
+    "href": "01-bienvenida.html",
+    "title": "1  Bienvenida al equipo",
+    "section": "",
+    "text": "Misión\nAvanzamos evidencia reproducible sobre cómo distintos estresores climáticos y ambientales se asocian a resultados neonatales tempranos, en diálogo con otros equipos locales e internacionales. Combinamos epidemiología, datos espaciales o climáticos públicos cuando corresponden, y modelaje estadístico transparente cuando la pregunta lo requiere.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Bienvenida al equipo</span>"
+    ]
+  },
+  {
+    "objectID": "01-bienvenida.html#coordinación",
+    "href": "01-bienvenida.html#coordinación",
+    "title": "1  Bienvenida al equipo",
+    "section": "Coordinación",
+    "text": "Coordinación\n\n\n\nRol\nCorreo electrónico\nNotas ejecutivas\n\n\n\n\nInvestigación líder / equipo de salud maternal-perinatal\nestela.blanco@uc.cl\nPreguntas científicas, priorización de proyectos públicos ligados al laboratorio.\n\n\nSoporte reproducibilidad · gestión repos\njdconejeros@uc.cl\nResearch collaborator – repository manager según los lineamientos de la organización.\n\n\n\nEnlaces útiles externos al manual:\n\nOrganización GitHub · ClimChange-NewbornHealth — visión panorámica y contacto rápido.\nLaboratorio público Estela Blanco · sitio académico — trayectoria, proyectos destacados y canales externos.\n\n\n1.0.1 Expectativas mínimas\n\nRegistrar acuerdos de datos compartidos (origen temporal, filtros poblacionales, actualizaciones) antes de ejecutar código productivo irreversible sobre tablas grandes.\nUtilizar comunicación asíncrona clara cuando el equipo está distribuido: resumen + hallazgos + preguntas concretas. Evitar hilos paralelos redundantes cuando la decisión debe quedar registrada.\nReconocimiento cruzado: si reutilizas una función ajena dentro de algo que publicaras, mención explícita al autor principal en el código y en cualquier resultado derivado compartido.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Bienvenida al equipo</span>"
+    ]
+  },
+  {
+    "objectID": "01-bienvenida.html#relación-entre-capítulos-y-lineamientos-oficiales",
+    "href": "01-bienvenida.html#relación-entre-capítulos-y-lineamientos-oficiales",
+    "title": "1  Bienvenida al equipo",
+    "section": "1.1 Relación entre capítulos y lineamientos oficiales",
+    "text": "1.1 Relación entre capítulos y lineamientos oficiales\nLos detalles de estructura de carpetas, licencia README y datos externos obligatorios viven textualmente —y se actualizan— en Lineamientos_colaboradores. Todo lo siguiente lo resume operativamente pero no lo reemplaza.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Bienvenida al equipo</span>"
+    ]
+  },
+  {
+    "objectID": "02-cultura.html",
+    "href": "02-cultura.html",
+    "title": "2  Cultura operativa del laboratorio",
+    "section": "",
+    "text": "2.1 Qué esperamos antes de iniciar trabajo autónomo",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Cultura operativa del laboratorio</span>"
+    ]
+  },
+  {
+    "objectID": "02-cultura.html#qué-esperamos-antes-de-iniciar-trabajo-autónomo",
+    "href": "02-cultura.html#qué-esperamos-antes-de-iniciar-trabajo-autónomo",
+    "title": "2  Cultura operativa del laboratorio",
+    "section": "",
+    "text": "Honestidad intelectual sobre limitaciones muestrales; evitamos extrapolar efectos donde la identificación es débil solo por conveniencia editorial.\nRespeto y colaboración horizontal incluso cuando el debate es rápido: críticas al código o al diseño estadístico, no a personas.\nTransparencia progresiva —versionamos decisiones reproducibles públicamente siempre que no exista restricción legal contractual expresa.\n\n\nComunicación diaria efectiva\n\nEstado breve cuando avanzas tareas paralelas (&gt; 48 h sin novedades y bloque esperado ⇒ actualiza).\nPrioriza formatos reproducibles cuando compartís resultados preliminares: tablas y figuras en archivos dentro de rutas relativas antes que capturas dispersas difíciles de replicar.\nSolicitudes específicas: “¿puedes validar la coherencia de fechas antes del merge?” mejor que mensajes vagos tipo “¿puedes mirar todo?” cuando el bloque temporal es conocido por ambas partes.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Cultura operativa del laboratorio</span>"
+    ]
+  },
+  {
+    "objectID": "02-cultura.html#resolución-rápida-de-conflictos-técnico-científicos",
+    "href": "02-cultura.html#resolución-rápida-de-conflictos-técnico-científicos",
+    "title": "2  Cultura operativa del laboratorio",
+    "section": "2.2 Resolución rápida de conflictos técnico-científicos",
+    "text": "2.2 Resolución rápida de conflictos técnico-científicos\n\n\n\n\n\n\n\nSituación\nFlujo sugerido\n\n\n\n\nDiscrepancia en una transformación de variable\nAbre issue con hipótesis + comparación mínima en subrama compare/&lt;tema&gt;.\n\n\nPrioridad de publicación compartida\nDocumenta roles y orden de autores en el issue de planificación vinculado al artículo o producto.\n\n\nIncertidumbre ética o de datos sensibles\nDetén el flujo de publicación pública y escala vía correo institucional acordado con la coordinación científica.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Cultura operativa del laboratorio</span>"
+    ]
+  },
+  {
+    "objectID": "02-cultura.html#lenguaje-inclusivo",
+    "href": "02-cultura.html#lenguaje-inclusivo",
+    "title": "2  Cultura operativa del laboratorio",
+    "section": "Lenguaje inclusivo",
+    "text": "Lenguaje inclusivo\nUsamos formulaciones neutras o explícitas que no asuman género u origen donde no hay evidencia estadística poblacional necesaria detrás —reforzamos comprensibilidad internacional porque gran parte del código será leído por colaboradores de habla inglesa aun cuando el proyecto sea primariamente en español.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Cultura operativa del laboratorio</span>"
+    ]
+  },
+  {
+    "objectID": "03-reproducibilidad.html",
+    "href": "03-reproducibilidad.html",
+    "title": "3  Reproducibilidad práctica",
+    "section": "",
+    "text": "Principios ejecutivos\nLos lineamientos reiteran esta premisa institucional: en el repo solo estarán disponibles todos los códigos necesarios, mientras los datasets de trabajo voluminosos deben estar enlazados externamente: por ejemplo Dropbox o Google Drive institucional, con texto explícito de acceso dentro del README.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Reproducibilidad práctica</span>"
+    ]
+  },
+  {
+    "objectID": "03-reproducibilidad.html#principios-ejecutivos",
+    "href": "03-reproducibilidad.html#principios-ejecutivos",
+    "title": "3  Reproducibilidad práctica",
+    "section": "",
+    "text": "git registra historia · Los datos grandes no viven en repos públicos.\nRelativizar rutas · Nada de rutas locales absolutas C:\\Users\\... dentro de repos compartibles.\nDocumentación mínima · README.md cuenta la historia suficiente para que otro equipo entienda qué corre y para qué sin ejecutar línea uno.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Reproducibilidad práctica</span>"
+    ]
+  },
+  {
+    "objectID": "03-reproducibilidad.html#qué-califica-como-reproducible-aquí",
+    "href": "03-reproducibilidad.html#qué-califica-como-reproducible-aquí",
+    "title": "3  Reproducibilidad práctica",
+    "section": "3.1 ¿Qué califica como “reproducible” aquí?",
+    "text": "3.1 ¿Qué califica como “reproducible” aquí?\n\n\n\n\n\n\n\n\nNivel\nQué implica\nCuándo lo exigimos\n\n\n\n\nNivel A — Análisis interno\nScript + entorno documentado + hash de versión de paquetes\nTrabajo de tesis / preprints internos compartidos en el grupo.\n\n\nNivel B — Público asociado a artículo\nNivel A + instrucciones explícitas de descarga de datos públicos o enlaces versionados + salidas en Output_Analysis\nManuscritos y reportes con DOI o preprint activo.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Reproducibilidad práctica</span>"
+    ]
+  },
+  {
+    "objectID": "03-reproducibilidad.html#validación-cruzada-breve",
+    "href": "03-reproducibilidad.html#validación-cruzada-breve",
+    "title": "3  Reproducibilidad práctica",
+    "section": "3.2 Validación cruzada breve",
+    "text": "3.2 Validación cruzada breve\nAntes de considerar un análisis “cerrado”:\n\nRe-ejecución en máquina limpia (contenedor, renv, o entorno virtual equivalente) por alguien que no escribió el pipeline original.\nParidad de filas entre insumos y productos agregados —conteo de unidades de análisis consistente post join.\nFiguras exportadas comparables —hash o diff visual razonable entre salidas finales y las regeneradas.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Reproducibilidad práctica</span>"
+    ]
+  },
+  {
+    "objectID": "03-reproducibilidad.html#privacidad-y-datos-identificables",
+    "href": "03-reproducibilidad.html#privacidad-y-datos-identificables",
+    "title": "3  Reproducibilidad práctica",
+    "section": "3.3 Privacidad y datos identificables",
+    "text": "3.3 Privacidad y datos identificables\nNunca subas identificadores directos o tablas crudas con potencial reidentificación a repositorios públicos. Si la credencial de acceso vive en un .Renviron o .env, está en .gitignore y el README indica qué variables se requieren sin revelar secretos.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Reproducibilidad práctica</span>"
+    ]
+  },
+  {
+    "objectID": "04-repositorios.html",
+    "href": "04-repositorios.html",
+    "title": "4  Repositorios y convenciones",
+    "section": "",
+    "text": "4.1 Requisitos comunes (resumen)\nSegún Lineamientos_colaboradores:",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Repositorios y convenciones</span>"
+    ]
+  },
+  {
+    "objectID": "04-repositorios.html#requisitos-comunes-resumen",
+    "href": "04-repositorios.html#requisitos-comunes-resumen",
+    "title": "4  Repositorios y convenciones",
+    "section": "",
+    "text": "Nombres breves, claros, preferentemente en inglés.\nRepositorio público salvo excepción contractual demostrable.\nArchivos obligatorios: README.md, .gitignore, licencia —recomendación explícita MIT por estandarización internacional.\nDescripción corta en GitHub que contextualice el dataset o pregunta.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Repositorios y convenciones</span>"
+    ]
+  },
+  {
+    "objectID": "04-repositorios.html#estructura-estándar-de-carpetas",
+    "href": "04-repositorios.html#estructura-estándar-de-carpetas",
+    "title": "4  Repositorios y convenciones",
+    "section": "4.2 Estructura estándar de carpetas",
+    "text": "4.2 Estructura estándar de carpetas\nCode/\n  Process/        # limpieza, construcción de cohortes, joins\n  Descriptive/    # tablas y figuras exploratorias versionadas\n  Models/         # estimaciones principales, sensibilidades\nOutput_Analysis/\n  Graphs/\n  Tables/\n.gitignore\nREADME.md\nLICENSE\nAsí separamos lógica computacional (Code/) de artefactos finales versionables (Output_Analysis/). Evita mezclar scripts intermedios con PDFs o PNG desordenados en la raíz.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Repositorios y convenciones</span>"
+    ]
+  },
+  {
+    "objectID": "04-repositorios.html#readme-mínimo-útil",
+    "href": "04-repositorios.html#readme-mínimo-útil",
+    "title": "4  Repositorios y convenciones",
+    "section": "4.3 README mínimo útil",
+    "text": "4.3 README mínimo útil\nInspirado en la plantilla enlazada desde los lineamientos (Plantilla_README.md):\n\nTítulo — idealmente el del manuscrito o informe vinculado.\nMétricas / financiamiento — ANID, FONDECYT, IUP, etc.\nAutores y mantenedor activo del repo — correo de contacto explícito.\nDescripción científica — antecedentes, objetivos, métodos (puedes extraer del resumen del artículo).\nDatos — enlace externo + secuencia de scripts a ejecutar en orden.\nResultados destacados — figuras y tablas numeradas con nota interpretativa breve.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Repositorios y convenciones</span>"
+    ]
+  },
+  {
+    "objectID": "04-repositorios.html#ejemplos-ilustrativos",
+    "href": "04-repositorios.html#ejemplos-ilustrativos",
+    "title": "4  Repositorios y convenciones",
+    "section": "Ejemplos ilustrativos",
+    "text": "Ejemplos ilustrativos\n\nCIIIA-ClimateBirthWeightAnalysis — ejemplo citado en los lineamientos para ver cómo se articula acceso a datos externos con código.\n\n\n4.3.1 Repositorios activos frecuentes\n\n\n\nRepositorio\nRol operativo\n\n\n\n\nHeatWave_PretermBirth_Chile\nOlas de calor y prematuridad — referencia R reciente.\n\n\nCIIIA-ClimateBirthWeightAnalysis\nPeso al nacer y clima — plantilla de documentación pública.\n\n\nPollution_Kriging\nInterpolación espacial de contaminantes SINCA.\n\n\nImputation_ClimData24\nImputación de brechas en series climáticas.\n\n\n\nExplora el resto desde el listado público de la organización en repositories.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Repositorios y convenciones</span>"
+    ]
+  },
+  {
+    "objectID": "05-flujos.html",
+    "href": "05-flujos.html",
+    "title": "5  Flujos de trabajo con Git",
+    "section": "",
+    "text": "5.1 Ramas y commits",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Flujos de trabajo con Git</span>"
+    ]
+  },
+  {
+    "objectID": "05-flujos.html#ramas-y-commits",
+    "href": "05-flujos.html#ramas-y-commits",
+    "title": "5  Flujos de trabajo con Git",
+    "section": "",
+    "text": "Práctica\nMotivo\n\n\n\n\nmain estable\nLo que un colaborador externo debería poder clonar y correr sin sorpresas inmediatas.\n\n\nRamas por pregunta (feature/heat-definitions)\nFacilita revisiones atómicas y rollbacks puntuales.\n\n\nCommits atómicos con mensaje imperativo breve\nHistoria legible para bisectar errores.\n\n\n\n\nPlantilla de mensaje de commit\nÁmbito: acción en infinitivo (≤ 72 caracteres)\n\nCuerpo opcional: por qué (contexto científico o técnico)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Flujos de trabajo con Git</span>"
+    ]
+  },
+  {
+    "objectID": "05-flujos.html#pull-requests-pr-merge-requests",
+    "href": "05-flujos.html#pull-requests-pr-merge-requests",
+    "title": "5  Flujos de trabajo con Git",
+    "section": "5.2 Pull requests (PR / merge requests)",
+    "text": "5.2 Pull requests (PR / merge requests)\n\nDescripción — pregunta de investigación o bug reproducible.\nChecklist — README actualizado, rutas relativas, sin datos sensibles.\nRevisor asignado — al menos una lectura cruzada cuando toca Models/ o export finales.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Flujos de trabajo con Git</span>"
+    ]
+  },
+  {
+    "objectID": "05-flujos.html#colaboración-externa",
+    "href": "05-flujos.html#colaboración-externa",
+    "title": "5  Flujos de trabajo con Git",
+    "section": "5.3 Colaboración externa",
+    "text": "5.3 Colaboración externa\nLos lineamientos indican que cualquiera puede hacer fork de repositorios públicos. Si planeas incorporar código externo:\n\nDocumenta la procedencia y licencia en el README y en comentarios mínimos en el script importado.\nPrefiere integración vía PR pequeño antes que copiar archivos masivos sin atribución.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Flujos de trabajo con Git</span>"
+    ]
+  },
+  {
+    "objectID": "05-flujos.html#entornos-reproducibles-resumen",
+    "href": "05-flujos.html#entornos-reproducibles-resumen",
+    "title": "5  Flujos de trabajo con Git",
+    "section": "5.4 Entornos reproducibles (resumen)",
+    "text": "5.4 Entornos reproducibles (resumen)\n\n\n\n\n\n\n\nContexto\nHerramienta sugerida\n\n\n\n\nR\nrenv + lockfile versionado\n\n\nPython\nrequirements.txt o pyproject.toml + versiones fijadas\n\n\nMixto\ndocumenta contenedor o entorno Conda solo si es estrictamente necesario para no sobrecargar onboarding\n\n\n\nDetalles de estilo de código —tidyverse cuando usemos R, revisiones— están en Capítulo 6.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Flujos de trabajo con Git</span>"
+    ]
+  },
+  {
+    "objectID": "06-codigo.html",
+    "href": "06-codigo.html",
+    "title": "6  Estándares de código",
+    "section": "",
+    "text": "6.1 Lenguajes predominantes\nLa mayoría de pipelines históricos están en R; algunos proyectos recientes incorporan Python (por ejemplo flujos geoespaciales o de descarga automatizada). Los principios siguientes aplican a ambos.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Estándares de código</span>"
+    ]
+  },
+  {
+    "objectID": "06-codigo.html#estilo-y-legibilidad",
+    "href": "06-codigo.html#estilo-y-legibilidad",
+    "title": "6  Estándares de código",
+    "section": "6.2 Estilo y legibilidad",
+    "text": "6.2 Estilo y legibilidad\n\nFunciones cortas — una responsabilidad por función; nombres verbales (compute_exposure_lag) sobre abreviaturas opacas.\nComentarios “por qué” — no repitas lo obvio del dplyr pipeline; sí documenta supuestos epidemiológicos no triviales.\nConstantes arriba — umbrales clínicos, fechas de corte administrativas, versiones de shapefiles en un bloque único al inicio del script o en config.R / config.py.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Estándares de código</span>"
+    ]
+  },
+  {
+    "objectID": "06-codigo.html#organización-de-scripts",
+    "href": "06-codigo.html#organización-de-scripts",
+    "title": "6  Estándares de código",
+    "section": "6.3 Organización de scripts",
+    "text": "6.3 Organización de scripts\n\n\n\n\n\n\n\nCarpeta Code/\nContenido típico\n\n\n\n\nProcess/\nIngesta, limpieza, construcción de variables de exposición.\n\n\nDescriptive/\nEstadísticos base, figuras exploratorias no finales.\n\n\nModels/\nAjuste de modelos principales, sensibilidades, bootstraps.\n\n\n\n\n6.3.1 Salidas\n\nGráficos y tablas finales → Output_Analysis/Graphs y .../Tables según lineamientos.\nEvita escribir resultados con rutas absolutas locales; parametriza un directorio raíz here::here() (R) o equivalente.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Estándares de código</span>"
+    ]
+  },
+  {
+    "objectID": "06-codigo.html#calidad-y-revisión",
+    "href": "06-codigo.html#calidad-y-revisión",
+    "title": "6  Estándares de código",
+    "section": "6.4 Calidad y revisión",
+    "text": "6.4 Calidad y revisión\n\n\n\nCheck\nAntes de merge\n\n\n\n\nLinter básico / styler (R) o ruff (Python) cuando aplique\nSí\n\n\nTiempo de ejecución razonable documentado\nSí\n\n\nDependencias nuevas justificadas en README\nSí",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Estándares de código</span>"
+    ]
+  },
+  {
+    "objectID": "06-codigo.html#uso-asistido-por-ia-lineamiento-práctico",
+    "href": "06-codigo.html#uso-asistido-por-ia-lineamiento-práctico",
+    "title": "6  Estándares de código",
+    "section": "6.5 Uso asistido por IA (lineamiento práctico)",
+    "text": "6.5 Uso asistido por IA (lineamiento práctico)\nSi empleas asistentes generativos:\n\nVerifica salidas numéricas con casos test pequeños conocidos.\nNo pegues datos identificables en prompts públicos.\nAtribuye en comentario de PR si un bloque sustancial proviene de asistencia automatizada (transparencia metodológica).",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Estándares de código</span>"
+    ]
+  },
+  {
+    "objectID": "07-inicio-rapido.html",
+    "href": "07-inicio-rapido.html",
+    "title": "7  Inicio rápido (checklist)",
+    "section": "",
+    "text": "7.1 Día 0 — Accesos",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Inicio rápido (checklist)</span>"
+    ]
+  },
+  {
+    "objectID": "07-inicio-rapido.html#día-0-accesos",
+    "href": "07-inicio-rapido.html#día-0-accesos",
+    "title": "7  Inicio rápido (checklist)",
+    "section": "",
+    "text": "Cuenta GitHub vinculada al correo institucional.\nInvitación a la organización (si aplica) o fork planificado de un repo público existente.\nLectura de Lineamientos_colaboradores (15 minutos).",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Inicio rápido (checklist)</span>"
+    ]
+  },
+  {
+    "objectID": "07-inicio-rapido.html#día-1-entorno-local",
+    "href": "07-inicio-rapido.html#día-1-entorno-local",
+    "title": "7  Inicio rápido (checklist)",
+    "section": "7.2 Día 1 — Entorno local",
+    "text": "7.2 Día 1 — Entorno local\n\nInstala Quarto si editarás este manual o documentación similar.\nR ≥ 4.2 o Python acorde al repo objetivo + VS Code / RStudio / Positron.\nConfigura git con nombre público y correo verificado.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Inicio rápido (checklist)</span>"
+    ]
+  },
+  {
+    "objectID": "07-inicio-rapido.html#día-2-primer-repositorio",
+    "href": "07-inicio-rapido.html#día-2-primer-repositorio",
+    "title": "7  Inicio rápido (checklist)",
+    "section": "7.3 Día 2 — Primer repositorio",
+    "text": "7.3 Día 2 — Primer repositorio\n\nClona un repo de referencia (por ejemplo CIIIA-ClimateBirthWeightAnalysis).\nCrea rama setup/&lt;tu-iniciales&gt;.\nVerifica que el README describe con precisión el orden de scripts.\nEjecuta al menos un script de Descriptive/ con datos de prueba o submuestra si el dataset completo no cabe localmente.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Inicio rápido (checklist)</span>"
+    ]
+  },
+  {
+    "objectID": "07-inicio-rapido.html#antes-de-publicar-resultados",
+    "href": "07-inicio-rapido.html#antes-de-publicar-resultados",
+    "title": "7  Inicio rápido (checklist)",
+    "section": "7.4 Antes de publicar resultados",
+    "text": "7.4 Antes de publicar resultados\n\nREADME con sección de datos externos + financiamiento.\nOutput_Analysis contiene solo versiones finales acordadas.\nSin credenciales ni tablas identificables en el historial (git log).",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Inicio rápido (checklist)</span>"
+    ]
+  },
+  {
+    "objectID": "07-inicio-rapido.html#publicar-actualizaciones-de-este-manual",
+    "href": "07-inicio-rapido.html#publicar-actualizaciones-de-este-manual",
+    "title": "7  Inicio rápido (checklist)",
+    "section": "7.5 Publicar actualizaciones de este manual",
+    "text": "7.5 Publicar actualizaciones de este manual\nquarto preview   # revisión local\nquarto render    # genera _site/\nTras git push a main, el flujo .github/workflows/publish.yml despliega vía gh-pages. La URL pública destino es:\nhttps://climchange-newbornhealth.github.io/lab-manual/\nEn Settings → Pages del repositorio lab-manual, confirma que la fuente sea la rama gh-pages y carpeta / (root).",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Inicio rápido (checklist)</span>"
+    ]
+  }
+]
