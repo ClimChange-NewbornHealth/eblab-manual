@@ -109,6 +109,56 @@ h1.title,
   color: var(--ebl-ink);
 }
 
+/* Title block metadata: AUTOR(es) junto al DOI (Zenodo · estilo libro de referencia), URL completa legible */
+header.quarto-title-block .quarto-title-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem 2.75rem;
+
+  /* Orden DOM: autor → fecha → DOI · mostrar autor | DOI | fecha */
+  & > div:nth-child(1) {
+    order: 1;
+  }
+
+  & > div:nth-child(2) {
+    order: 3;
+  }
+
+  & > div:nth-child(3) {
+    order: 2;
+  }
+}
+
+.quarto-title-meta-heading {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.72rem !important;
+  font-weight: 600;
+  margin-bottom: 0.35rem !important;
+  color: #9a9a9a !important;
+}
+
+.quarto-title-meta-contents p.date,
+.quarto-title-meta-contents {
+  margin-bottom: 0;
+}
+
+/* Enlace DOI resolver: muestra la URL https://doi.org/... como texto visible (véase intro-programacion) */
+header.quarto-title-block p.doi a {
+  color: #{$body-color} !important;
+  font-weight: 400 !important;
+  word-break: break-word;
+  font-size: 0 !important;
+  line-height: 0 !important;
+}
+
+header.quarto-title-block p.doi a::before {
+  content: attr(href);
+  font-size: 1rem !important;
+  line-height: 1.45 !important;
+  font-family: $font-family-sans-serif;
+}
+
 .book .page-navigation {
   border-top-color: #e2e2e2;
 }
@@ -148,6 +198,10 @@ div.callout-note {
   --ebl-ink: #f5f7f9;
 }
 
+[data-bs-theme="dark"] .quarto-title-meta-heading {
+  color: #8a97a3 !important;
+}
+
 /* Tema oscuro: enlaces en azul (evita el verde por defecto de darkly) */
 [data-bs-theme="dark"] a,
 [data-bs-theme="dark"] a.quarto-title-author-email,
@@ -172,6 +226,10 @@ div.callout-note {
 
 [data-bs-theme="dark"] .sidebar-link:hover {
   color: #9fd1ff !important;
+}
+
+[data-bs-theme="dark"] header.quarto-title-block p.doi a::before {
+  color: #5eb3ff !important;
 }
 
 [data-bs-theme="dark"] .navbar {
