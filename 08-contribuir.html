@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Flujos de trabajo con Git – EB-Lab · Manual de trabajo</title>
+<title>Cómo contribuir (proyectos y manual) – EB-Lab · Manual de trabajo</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,8 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./06-codigo.html" rel="next">
-<link href="./04-repositorios.html" rel="prev">
+<link href="./07-inicio-rapido.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -281,7 +280,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./05-flujos.html"><span class="chapter-title">Flujos de trabajo con Git</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./08-contribuir.html"><span class="chapter-title">Cómo contribuir (proyectos y manual)</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -321,7 +320,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./05-flujos.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Flujos de trabajo con Git</span></a>
+  <a href="./05-flujos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Flujos de trabajo con Git</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -336,7 +335,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./08-contribuir.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Cómo contribuir (proyectos y manual)</span></a>
+  <a href="./08-contribuir.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Cómo contribuir (proyectos y manual)</span></a>
   </div>
 </li>
     </ul>
@@ -349,13 +348,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#ramas-y-commits" id="toc-ramas-y-commits" class="nav-link active" data-scroll-target="#ramas-y-commits">Ramas y commits</a>
+  <li><a href="#nuevos-repositorios" id="toc-nuevos-repositorios" class="nav-link active" data-scroll-target="#nuevos-repositorios">Nuevos repositorios</a>
   <ul class="collapse">
-  <li><a href="#plantilla-de-mensaje-de-commit" id="toc-plantilla-de-mensaje-de-commit" class="nav-link" data-scroll-target="#plantilla-de-mensaje-de-commit">Plantilla de mensaje de commit</a></li>
+  <li><a href="#paso-1-crear-el-repositorio" id="toc-paso-1-crear-el-repositorio" class="nav-link" data-scroll-target="#paso-1-crear-el-repositorio">Paso 1: crear el repositorio</a></li>
+  <li><a href="#paso-2-definir-metadatos-y-archivos-base" id="toc-paso-2-definir-metadatos-y-archivos-base" class="nav-link" data-scroll-target="#paso-2-definir-metadatos-y-archivos-base">Paso 2: definir metadatos y archivos base</a></li>
+  <li><a href="#paso-3-clonar-y-trabajar-en-local" id="toc-paso-3-clonar-y-trabajar-en-local" class="nav-link" data-scroll-target="#paso-3-clonar-y-trabajar-en-local">Paso 3: clonar y trabajar en local</a></li>
   </ul></li>
-  <li><a href="#pull-requests-pr-merge-requests" id="toc-pull-requests-pr-merge-requests" class="nav-link" data-scroll-target="#pull-requests-pr-merge-requests">Pull requests (PR / merge requests)</a></li>
-  <li><a href="#colaboración-externa" id="toc-colaboración-externa" class="nav-link" data-scroll-target="#colaboración-externa">Colaboración externa</a></li>
-  <li><a href="#entornos-reproducibles-resumen" id="toc-entornos-reproducibles-resumen" class="nav-link" data-scroll-target="#entornos-reproducibles-resumen">Entornos reproducibles (resumen)</a></li>
+  <li><a href="#estructura-de-carpetas-esperada" id="toc-estructura-de-carpetas-esperada" class="nav-link" data-scroll-target="#estructura-de-carpetas-esperada">Estructura de carpetas esperada</a></li>
+  <li><a href="#contenido-mínimo-del-readme" id="toc-contenido-mínimo-del-readme" class="nav-link" data-scroll-target="#contenido-mínimo-del-readme">Contenido mínimo del README</a></li>
+  <li><a href="#datos-fuera-del-repositorio" id="toc-datos-fuera-del-repositorio" class="nav-link" data-scroll-target="#datos-fuera-del-repositorio">Datos fuera del repositorio</a></li>
+  <li><a href="#contribuir-a-este-manual-quarto" id="toc-contribuir-a-este-manual-quarto" class="nav-link" data-scroll-target="#contribuir-a-este-manual-quarto">Contribuir a <strong>este</strong> manual (Quarto)</a></li>
   </ul>
 </nav>
     </div>
@@ -365,7 +367,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Flujos de trabajo con Git</span></h1>
+<h1 class="title"><span class="chapter-title">Cómo contribuir (proyectos y manual)</span></h1>
 </div>
 
 
@@ -382,99 +384,142 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-simple callout-caution callout-titled">
+<p>Este capítulo condensa el instructivo de <a href="https://github.com/ClimChange-NewbornHealth/Lineamientos_colaboradores">Lineamientos para colaboradores</a> y enlaza las figuras originales del repositorio con copias servidas desde este manual.</p>
+<div class="callout callout-style-simple callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Precaución</span>Ramas y <code>main</code>
+<span class="screen-reader-only">Importante</span>Antes de publicar nada en GitHub
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Evita subir cambios grandes a <code>main</code> sin revisión cuando el equipo activo lo requiere; prefiere PR con contexto reproducible.</p>
+<p>No subas <strong>datos identificables</strong> ni credenciales. Los volúmenes grandes van <strong>fuera del repositorio</strong> (p.&nbsp;ej. Dropbox o Google Drive) y se enlazan desde el <code>README</code>.</p>
 </div>
 </div>
-<section id="ramas-y-commits" class="level2">
-<h2 class="anchored" data-anchor-id="ramas-y-commits">Ramas y commits</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Práctica</th>
-<th>Motivo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>main</code> estable</td>
-<td>Lo que un colaborador externo debería poder clonar y correr sin sorpresas inmediatas.</td>
-</tr>
-<tr class="even">
-<td>Ramas por pregunta (<code>feature/heat-definitions</code>)</td>
-<td>Facilita revisiones atómicas y rollbacks puntuales.</td>
-</tr>
-<tr class="odd">
-<td>Commits atómicos con mensaje imperativo breve</td>
-<td>Historia legible para bisectar errores.</td>
-</tr>
-</tbody>
-</table>
-<section id="plantilla-de-mensaje-de-commit" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="plantilla-de-mensaje-de-commit">Plantilla de mensaje de commit</h3>
-<pre><code>Ámbito: acción en infinitivo (≤ 72 caracteres)
-
-Cuerpo opcional: por qué (contexto científico o técnico)</code></pre>
+<section id="nuevos-repositorios" class="level2">
+<h2 class="anchored" data-anchor-id="nuevos-repositorios">Nuevos repositorios</h2>
+<section id="paso-1-crear-el-repositorio" class="level3">
+<h3 class="anchored" data-anchor-id="paso-1-crear-el-repositorio">Paso 1: crear el repositorio</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/images/lineamientos/repo1.png" class="img-fluid figure-img"></p>
+<figcaption>Paso 1 — Crear repositorio en GitHub</figcaption>
+</figure>
+</div>
 </section>
-</section>
-<section id="pull-requests-pr-merge-requests" class="level2">
-<h2 class="anchored" data-anchor-id="pull-requests-pr-merge-requests">Pull requests (PR / merge requests)</h2>
-<ol type="1">
-<li><strong>Descripción</strong> — pregunta de investigación o bug reproducible.</li>
-<li><strong>Checklist</strong> — <code>README</code> actualizado, rutas relativas, sin datos sensibles.</li>
-<li><strong>Revisor asignado</strong> — al menos una lectura cruzada cuando toca <code>Models/</code> o export finales.</li>
-</ol>
-</section>
-<section id="colaboración-externa" class="level2">
-<h2 class="anchored" data-anchor-id="colaboración-externa">Colaboración externa</h2>
-<p>Los lineamientos indican que cualquiera puede hacer <em>fork</em> de repositorios públicos. Si planeas incorporar código externo:</p>
+<section id="paso-2-definir-metadatos-y-archivos-base" class="level3">
+<h3 class="anchored" data-anchor-id="paso-2-definir-metadatos-y-archivos-base">Paso 2: definir metadatos y archivos base</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/images/lineamientos/repo2.png" class="img-fluid figure-img"></p>
+<figcaption>Paso 2 — Ajustes recomendados del repositorio</figcaption>
+</figure>
+</div>
+<p>Cada repositorio del ecosistema <strong>EB-Lab</strong> (organización <a href="https://github.com/ClimChange-NewbornHealth">ClimChange-NewbornHealth</a>) debe cumplir:</p>
 <ul>
-<li>Documenta la procedencia y licencia en el <code>README</code> y en comentarios mínimos en el script importado.</li>
-<li>Prefiere integración vía PR pequeño antes que copiar archivos masivos sin atribución.</li>
+<li>Nombres <strong>breves</strong> y, de ser posible, en <strong>inglés</strong>.</li>
+<li><strong>Descripción</strong> corta con contexto científico.</li>
+<li>Visibilidad <strong>pública</strong> (salvo restricción contractual documentada).</li>
+<li>Archivos obligatorios: <strong><code>README.md</code></strong>, <strong><code>.gitignore</code></strong>, <strong>licencia</strong> (recomendación org: <strong>MIT</strong>).</li>
 </ul>
 </section>
-<section id="entornos-reproducibles-resumen" class="level2">
-<h2 class="anchored" data-anchor-id="entornos-reproducibles-resumen">Entornos reproducibles (resumen)</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Contexto</th>
-<th>Herramienta sugerida</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>R</td>
-<td><code>renv</code> + <code>lockfile</code> versionado</td>
-</tr>
-<tr class="even">
-<td>Python</td>
-<td><code>requirements.txt</code> o <code>pyproject.toml</code> + versiones fijadas</td>
-</tr>
-<tr class="odd">
-<td>Mixto</td>
-<td>documenta contenedor o entorno Conda <strong>solo</strong> si es estrictamente necesario para no sobrecargar onboarding</td>
-</tr>
-</tbody>
-</table>
-<p>Detalles de estilo de código —tidyverse cuando usemos R, revisiones— están en <a href="06-codigo.html" class="quarto-xref"><span>Estándares de código</span></a>.</p>
+<section id="paso-3-clonar-y-trabajar-en-local" class="level3">
+<h3 class="anchored" data-anchor-id="paso-3-clonar-y-trabajar-en-local">Paso 3: clonar y trabajar en local</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/images/lineamientos/repo3.png" class="img-fluid figure-img"></p>
+<figcaption>Paso 3 — Clonar y abrir en el IDE</figcaption>
+</figure>
+</div>
+<p>Puedes usar RStudio, Visual Studio Code, Positron u otro flujo que respete <code>git</code> y rutas relativas.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Pull requests pequeños
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Prefiere integrar cambios en <strong>ramas cortas</strong> y <strong>PR revisados</strong> antes de mezclar en <code>main</code>, sobre todo en <code>Models/</code> y en salidas finales.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="estructura-de-carpetas-esperada" class="level2">
+<h2 class="anchored" data-anchor-id="estructura-de-carpetas-esperada">Estructura de carpetas esperada</h2>
+<pre><code>Code/
+  Process/
+  Descriptive/
+  Models/
+Output_Analysis/
+  Graphs/
+  Tables/
+.gitignore
+README.md
+LICENSE</code></pre>
+</section>
+<section id="contenido-mínimo-del-readme" class="level2">
+<h2 class="anchored" data-anchor-id="contenido-mínimo-del-readme">Contenido mínimo del README</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/images/lineamientos/readme.png" class="img-fluid figure-img"></p>
+<figcaption>Esquema sugerido del README</figcaption>
+</figure>
+</div>
+<ol type="1">
+<li><strong>Título</strong> (idealmente el del artículo o producto).</li>
+<li><strong>Métricas y financiamiento</strong> (plantilla en el repo de lineamientos).</li>
+<li><strong>Autores</strong> con correo del autor principal, co-investigadores y <strong>mantenedor/a del repositorio</strong>.</li>
+<li><strong>Descripción</strong> (antecedentes, objetivos, métodos, discusión — puede basarse en el abstract).</li>
+<li><strong>Acceso a datos</strong> con enlace externo y <strong>orden de scripts</strong> a ejecutar.</li>
+<li><strong>Resultados principales</strong> con figuras y tablas numeradas y notas si aplica.</li>
+</ol>
+<p>Plantilla: <a href="https://github.com/ClimChange-NewbornHealth/Lineamientos_colaboradores/blob/main/Plantilla_README.md">Plantilla_README.md</a>.</p>
+</section>
+<section id="datos-fuera-del-repositorio" class="level2">
+<h2 class="anchored" data-anchor-id="datos-fuera-del-repositorio">Datos fuera del repositorio</h2>
+<p>En el <strong>repo</strong> van los <strong>códigos</strong> para replicar; las <strong>tablas voluminosas</strong> se enlazan externamente.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Capacidad y privacidad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Subir bases completas a GitHub satura el repo y aumenta el riesgo de filtrar metadatos sensibles. Mantén los enlaces versionados y el control de acceso <strong>fuera</strong> del historial público de <code>git</code>.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/images/lineamientos/data1.png" class="img-fluid figure-img"></p>
+<figcaption>Datos en almacenamiento externo (ejemplo 1)</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/images/lineamientos/data2.png" class="img-fluid figure-img"></p>
+<figcaption>Datos en almacenamiento externo (ejemplo 2)</figcaption>
+</figure>
+</div>
+<p>Ejemplo de buenas prácticas en README y datos: <a href="https://github.com/ClimChange-NewbornHealth/CIIIA-ClimateBirthWeightAnalysis">CIIIA-ClimateBirthWeightAnalysis</a>.</p>
+</section>
+<section id="contribuir-a-este-manual-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="contribuir-a-este-manual-quarto">Contribuir a <strong>este</strong> manual (Quarto)</h2>
+<ol type="1">
+<li>Haz <em>fork</em> o trabaja con permiso de escritura en <a href="https://github.com/ClimChange-NewbornHealth/eblab-manual"><code>eblab-manual</code></a>.</li>
+<li>Edita los <code>.qmd</code> o añade capítulos en <code>_quarto.yml</code>.</li>
+<li>Idioma inglés: carpeta <code>english/</code> (ver enlace <strong>English</strong> en la barra superior); vuelve a renderizar <strong>español e inglés</strong> antes de abrir PR.</li>
+<li>Comprueba localmente <code>quarto render</code> y, si aplica, <code>cd english &amp;&amp; quarto render</code>.</li>
+<li>Abre un <strong>pull request</strong> describiendo el cambio y enlazando issues si existen.</li>
+</ol>
+<p>Dudas de acceso y gestión de repositorios: <strong>jdconejeros@uc.cl</strong> (<em>Research Collaborator – Repository Manager</em>).</p>
 
 
 </section>
@@ -895,14 +940,11 @@ Cuerpo opcional: por qué (contexto científico o técnico)</code></pre>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./04-repositorios.html" class="pagination-link" aria-label="Repositorios y convenciones">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Repositorios y convenciones</span></span>
+      <a href="./07-inicio-rapido.html" class="pagination-link" aria-label="Inicio rápido (checklist)">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Inicio rápido (checklist)</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./06-codigo.html" class="pagination-link" aria-label="Estándares de código">
-        <span class="nav-page-text"><span class="chapter-title">Estándares de código</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

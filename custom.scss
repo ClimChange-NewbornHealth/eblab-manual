@@ -1,57 +1,137 @@
 /*-- scss:defaults --*/
-// Paleta inspirada en línea visual académica / salud ambiental (tonos fríos + fondo cálido)
-$primary: #2a6974;
-$link-color: #1e5560;
-$font-family-root: "Segoe UI", "Helvetica Neue", system-ui, -apple-system, sans-serif;
+// Estética alineada con estelablanco.cl (Colibri / tonos institucionales sobrios)
+$primary: #0073aa;
+$link-color: #005177;
+$body-bg: #fafafa;
+$body-color: #111111;
 
-// Bootstrap / Cosmo coherence
+$font-family-sans-serif: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif !default;
+$headings-font-family: "Source Serif 4", Georgia, "Times New Roman", serif !default;
+
 $table-bg: transparent;
 $table-hover-bg: rgba($primary, 0.045);
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap');
 
 /*-- scss:rules --*/
 :root {
   --ebl-accent: #{$primary};
-  --ebl-ink: #1c2a31;
+  --ebl-ink: #{$body-color};
 }
 
-body:not(.floating) .page-columns {
+body {
   letter-spacing: 0;
 }
 
-.sidebar-title,
-.quarto-banner {
-  letter-spacing: 0.02em;
+.sidebar-title-main,
+.sidebar-title {
+  letter-spacing: 0.015em;
+  font-family: $headings-font-family;
 }
 
-h1.title,
-.sidebar-title-main {
-  font-weight: 650;
-  color: var(--ebl-ink);
+#quarto-sidebar .sidebar-navigation .chapter-number {
+  display: none !important;
+}
+
+#TOC .toc-section-number,
+.toc-actions .numbered {
+  display: none !important;
+}
+
+.navbar {
+  border-bottom: 1px solid #e6e6e6;
+  box-shadow: none;
+  background-color: #ffffff !important;
+}
+
+.navbar .navbar-brand,
+.navbar-title {
+  font-family: $headings-font-family;
+  font-weight: 640;
+}
+
+.navbar-brand img.navbar-logo {
+  max-height: 40px;
+  width: auto;
+}
+
+.text-muted {
+  color: #767676 !important;
+}
+
+.sidebar-link {
+  color: #383838 !important;
+
+  &.active {
+    color: #{$link-color} !important;
+    background: rgba($primary, 0.08);
+  }
+
+  &:hover {
+    color: #{$primary} !important;
+  }
 }
 
 a {
   font-weight: 500;
 }
 
-#quarto-sidebar .sidebar-item a.sidebar-link.active {
-  background: rgba($primary, 0.12);
+h1.title,
+.sidebar-title-main {
+  color: var(--ebl-ink);
 }
 
-main {
-  line-height: 1.62;
+.book .page-navigation {
+  border-top-color: #e2e2e2;
+}
+
+div.callout {
+  border-radius: 0.25rem;
 }
 
 div.callout-important {
   border-left-width: 0.35rem;
-  border-left-color: $primary;
+  border-left-color: #111111;
 }
 
-.navbar {
-  box-shadow: 0 2px 0 rgba(30, 85, 96, 0.08);
+div.callout-note {
+  border-left-color: #{$primary};
 }
 
-[data-bs-theme="dark"] {
-  body {
-    --ebl-ink: #e8eef0;
+.page-footer.footer {
+  border-top: 1px solid #eaeaea;
+  padding-top: 0.85rem;
+
+  div {
+    color: #767676;
+    font-size: 0.88rem;
+
+    strong {
+      color: #222;
+    }
+
+    p {
+      margin-bottom: 0.25rem;
+    }
+  }
+}
+
+[data-bs-theme="dark"] body {
+  --ebl-ink: #f5f7f9;
+}
+
+[data-bs-theme="dark"] .navbar {
+  border-bottom-color: #3a4450;
+}
+
+[data-bs-theme="dark"] .page-footer.footer {
+  border-top-color: #3a4450;
+
+  div {
+    color: #c8d3db;
+
+    strong {
+      color: #fff;
+    }
   }
 }

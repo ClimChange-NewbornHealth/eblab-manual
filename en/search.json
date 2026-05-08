@@ -1,0 +1,422 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "EB-Lab · Lab manual",
+    "section": "",
+    "text": "Preface\nEB-Lab (Estela Blanco, together with the ClimChange-NewbornHealth GitHub organization) focuses on environmental exposure and perinatal health in Chile and comparable settings. This manual summarizes how we collaborate, version analyses, and publish code so work stays reviewable and reproducible.\nIt draws inspiration from the Benjamin-Chung lab manual and modular resources such as Yale DSDE’s Book of Workshops.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use-this-manual",
+    "href": "index.html#how-to-use-this-manual",
+    "title": "EB-Lab · Lab manual",
+    "section": "How to use this manual",
+    "text": "How to use this manual\nEach chapter is a quick decision or checklist before git push:\n\nWho should read it and when.\nMinimum standards before independent work.\nLinks to guidelines and reference repositories.\n\nFor the Spanish edition, use Español in the top bar.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#scope",
+    "href": "index.html#scope",
+    "title": "EB-Lab · Lab manual",
+    "section": "Scope",
+    "text": "Scope\n\n\n\n\n\n\nImportantLimits\n\n\n\nThis manual does not replace institutional protocols (ethics, consent, administrative confidentiality, etc.). It does set minimum technical standards: clear README, MIT license, large data off-repo, relative paths.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "01-welcome.html",
+    "href": "01-welcome.html",
+    "title": "Welcome to the team",
+    "section": "",
+    "text": "Mission\nEB-Lab works with projects under ClimChange-NewbornHealth. The public lab site is estelablanco.cl.\nWe build reproducible evidence on how climate and environmental stressors relate to early neonatal outcomes, alongside local and international partners. We combine epidemiology, public spatial/climate data when appropriate, and transparent statistical modeling.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome to the team</span>"
+    ]
+  },
+  {
+    "objectID": "01-welcome.html#coordination",
+    "href": "01-welcome.html#coordination",
+    "title": "Welcome to the team",
+    "section": "Coordination",
+    "text": "Coordination\n\n\n\nRole\nEmail\nNotes\n\n\n\n\nLead science / maternal–perinatal health\nestela.blanco@uc.cl\nScientific questions and priorities.\n\n\nReproducibility · repository management\njdconejeros@uc.cl\nResearch collaborator – repository manager (per org guidelines).\n\n\n\n\n\n\n\n\n\nTipORCID\n\n\n\nEstela Blanco · José Daniel Conejeros.\n\n\nUseful links: ClimChange-NewbornHealth · Lab website.\n\nMinimum expectations\n\nAgree on shared data scope (time window, population filters, updates) before irreversible production code on large tables.\nPrefer clear async updates when distributed: summary + findings + concrete questions.\nCredit dependencies: if you reuse someone’s function in publishable work, cite them in code and outputs.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome to the team</span>"
+    ]
+  },
+  {
+    "objectID": "01-welcome.html#relation-to-official-guidelines",
+    "href": "01-welcome.html#relation-to-official-guidelines",
+    "title": "Welcome to the team",
+    "section": "Relation to official guidelines",
+    "text": "Relation to official guidelines\nFolder structure, README, license, and external data requirements are maintained in Lineamientos_colaboradores. The manual summarizes but does not replace them.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome to the team</span>"
+    ]
+  },
+  {
+    "objectID": "02-culture.html",
+    "href": "02-culture.html",
+    "title": "Lab culture",
+    "section": "",
+    "text": "Before autonomous work",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Lab culture</span>"
+    ]
+  },
+  {
+    "objectID": "02-culture.html#before-autonomous-work",
+    "href": "02-culture.html#before-autonomous-work",
+    "title": "Lab culture",
+    "section": "",
+    "text": "Intellectual honesty about design limits; avoid overstating identification.\nRespect and collaboration even in fast debate.\nProgressive transparency — version reproducible decisions unless legally restricted.\n\n\nDay-to-day communication\n\nPost short status if parallel tasks stall (&gt;48h) and someone is waiting.\nPrefer reproducible artifacts (tables, figures on disk) over one-off screenshots.\nBe specific in requests (“validate date logic before merge?” not “can you look at everything?”).",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Lab culture</span>"
+    ]
+  },
+  {
+    "objectID": "02-culture.html#resolving-scientifictechnical-disagreements",
+    "href": "02-culture.html#resolving-scientifictechnical-disagreements",
+    "title": "Lab culture",
+    "section": "Resolving scientific/technical disagreements",
+    "text": "Resolving scientific/technical disagreements\n\n\n\n\n\n\n\nSituation\nSuggested flow\n\n\n\n\nVariable transform dispute\nOpen an issue + minimal comparison branch compare/&lt;topic&gt;.\n\n\nAuthorship / release priority\nDocument roles and author order in the planning issue tied to the product.\n\n\nEthics or sensitive data uncertainty\nPause public release; escalate via agreed institutional channels.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Lab culture</span>"
+    ]
+  },
+  {
+    "objectID": "02-culture.html#inclusive-language",
+    "href": "02-culture.html#inclusive-language",
+    "title": "Lab culture",
+    "section": "Inclusive language",
+    "text": "Inclusive language\nUse neutral or explicit wording; many readers are international even when the project is Spanish-first.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Lab culture</span>"
+    ]
+  },
+  {
+    "objectID": "03-reproducibility.html",
+    "href": "03-reproducibility.html",
+    "title": "Practical reproducibility",
+    "section": "",
+    "text": "Principles\nPer org guidelines: repositories host code; analysis tables are linked externally (e.g. Dropbox, Google Drive) with explicit access notes in the README.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Practical reproducibility</span>"
+    ]
+  },
+  {
+    "objectID": "03-reproducibility.html#principles",
+    "href": "03-reproducibility.html#principles",
+    "title": "Practical reproducibility",
+    "section": "",
+    "text": "git for history · Large data off GitHub.\nRelative paths · Avoid machine-specific absolute paths in shared repos.\nREADME · Enough story that someone understands what runs and why without running line 1.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Practical reproducibility</span>"
+    ]
+  },
+  {
+    "objectID": "03-reproducibility.html#what-reproducible-means-here",
+    "href": "03-reproducibility.html#what-reproducible-means-here",
+    "title": "Practical reproducibility",
+    "section": "What “reproducible” means here",
+    "text": "What “reproducible” means here\n\n\n\n\n\n\n\n\nLevel\nMeaning\nWhen required\n\n\n\n\nA — Internal\nScript + documented environment + package versions\nThesis / internal preprints in the group.\n\n\nB — Public / paper\nA + public data download steps + Output_Analysis\nManuscripts, reports with DOI or active preprint.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Practical reproducibility</span>"
+    ]
+  },
+  {
+    "objectID": "03-reproducibility.html#quick-validation",
+    "href": "03-reproducibility.html#quick-validation",
+    "title": "Practical reproducibility",
+    "section": "Quick validation",
+    "text": "Quick validation\n\nClean-machine rerun (container, renv, or virtualenv) by someone who did not write the pipeline.\nRow parity between inputs and aggregated outputs after joins.\nComparable figures between final exports and regenerated runs.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Practical reproducibility</span>"
+    ]
+  },
+  {
+    "objectID": "03-reproducibility.html#privacy",
+    "href": "03-reproducibility.html#privacy",
+    "title": "Practical reproducibility",
+    "section": "Privacy",
+    "text": "Privacy\nNever push direct identifiers or re-identifiable raw tables to public repos. Keep secrets in .Renviron / .env (gitignored); list required variables in the README without exposing values.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Practical reproducibility</span>"
+    ]
+  },
+  {
+    "objectID": "04-repositories.html",
+    "href": "04-repositories.html",
+    "title": "Repositories and conventions",
+    "section": "",
+    "text": "Common requirements (summary)\nFrom Lineamientos_colaboradores:",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Repositories and conventions</span>"
+    ]
+  },
+  {
+    "objectID": "04-repositories.html#common-requirements-summary",
+    "href": "04-repositories.html#common-requirements-summary",
+    "title": "Repositories and conventions",
+    "section": "",
+    "text": "Short names, preferably English.\nPublic repositories unless a contract explicitly forbids it.\nRequired files: README.md, .gitignore, license — MIT recommended.\nShort GitHub description with scientific context.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Repositories and conventions</span>"
+    ]
+  },
+  {
+    "objectID": "04-repositories.html#standard-layout",
+    "href": "04-repositories.html#standard-layout",
+    "title": "Repositories and conventions",
+    "section": "Standard layout",
+    "text": "Standard layout\nCode/\n  Process/\n  Descriptive/\n  Models/\nOutput_Analysis/\n  Graphs/\n  Tables/\n.gitignore\nREADME.md\nLICENSE",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Repositories and conventions</span>"
+    ]
+  },
+  {
+    "objectID": "04-repositories.html#readme-essentials",
+    "href": "04-repositories.html#readme-essentials",
+    "title": "Repositories and conventions",
+    "section": "README essentials",
+    "text": "README essentials\nBased on the org template:\n\nTitle — ideally the paper or product title.\nMetrics / funding — ANID, FONDECYT, IUP, etc.\nAuthors + active maintainer — email for contact.\nScientific description — background, aims, methods (abstract is enough to start).\nData — external link + script execution order.\nMain results — numbered figures/tables with short notes.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Repositories and conventions</span>"
+    ]
+  },
+  {
+    "objectID": "04-repositories.html#examples",
+    "href": "04-repositories.html#examples",
+    "title": "Repositories and conventions",
+    "section": "Examples",
+    "text": "Examples\n\nCIIIA-ClimateBirthWeightAnalysis\n\n\n\n\nRepo\nRole\n\n\n\n\nHeatWave_PretermBirth_Chile\nHeat waves & prematurity\n\n\nPollution_Kriging\nSINCA pollution surfaces\n\n\nImputation_ClimData24\nClimate gaps imputation\n\n\n\nMore: organization repositories.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Repositories and conventions</span>"
+    ]
+  },
+  {
+    "objectID": "05-workflows.html",
+    "href": "05-workflows.html",
+    "title": "Git workflows",
+    "section": "",
+    "text": "Branches and commits",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Git workflows</span>"
+    ]
+  },
+  {
+    "objectID": "05-workflows.html#branches-and-commits",
+    "href": "05-workflows.html#branches-and-commits",
+    "title": "Git workflows",
+    "section": "",
+    "text": "Practice\nReason\n\n\n\n\nStable main\nExternal collaborators should clone and run without surprise.\n\n\nFeature branches (feature/heat-definitions)\nAtomic review and rollback.\n\n\nImperative commit subjects\nReadable history for bisecting.\n\n\n\n\nCommit template\nScope: verb in infinitive (≤ 72 chars)\n\nOptional body: why (science or tech context)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Git workflows</span>"
+    ]
+  },
+  {
+    "objectID": "05-workflows.html#pull-requests",
+    "href": "05-workflows.html#pull-requests",
+    "title": "Git workflows",
+    "section": "Pull requests",
+    "text": "Pull requests\n\nDescription — question or reproducible bug.\nChecklist — README updated, relative paths, no secrets.\nReviewer — especially for Models/ and final exports.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Git workflows</span>"
+    ]
+  },
+  {
+    "objectID": "05-workflows.html#external-collaboration",
+    "href": "05-workflows.html#external-collaboration",
+    "title": "Git workflows",
+    "section": "External collaboration",
+    "text": "External collaboration\nForks are expected. Importing external code:\n\nDocument provenance + license in README + short code comments.\nPrefer small PRs over bulk copy-paste without attribution.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Git workflows</span>"
+    ]
+  },
+  {
+    "objectID": "05-workflows.html#repro-environments-summary",
+    "href": "05-workflows.html#repro-environments-summary",
+    "title": "Git workflows",
+    "section": "Repro environments (summary)",
+    "text": "Repro environments (summary)\n\n\n\nContext\nTooling\n\n\n\n\nR\nrenv + committed lockfile\n\n\nPython\nPinned requirements.txt / pyproject.toml\n\n\nMixed\nContainers/Conda only if truly needed\n\n\n\nCoding style details — tidyverse norms in R, reviews — see Code standards.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Git workflows</span>"
+    ]
+  },
+  {
+    "objectID": "06-code.html",
+    "href": "06-code.html",
+    "title": "Code standards",
+    "section": "",
+    "text": "Languages at a glance\nSome projects lean on Python for geospatial or automated ingestion; standards below apply to both.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Code standards</span>"
+    ]
+  },
+  {
+    "objectID": "06-code.html#style",
+    "href": "06-code.html#style",
+    "title": "Code standards",
+    "section": "Style",
+    "text": "Style\n\nShort functions, verb names (compute_exposure_lag).\nComments explain “why”, not trivial dplyr steps; document epidemiologic assumptions that matter.\nShared constants first — clinical thresholds, admin cut-offs, shapefile versions in config.*.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Code standards</span>"
+    ]
+  },
+  {
+    "objectID": "06-code.html#folder-roles",
+    "href": "06-code.html#folder-roles",
+    "title": "Code standards",
+    "section": "Folder roles",
+    "text": "Folder roles\n\n\n\nCode/\nTypical content\n\n\n\n\nProcess/\nIngestion, cleaning, exposures.\n\n\nDescriptive/\nExploratory tables/figures (non-final).\n\n\nModels/\nMain estimates, sensitivities.\n\n\n\n\nOutputs\n\nFinals → Output_Analysis/Graphs & Tables.\nAvoid absolute paths; use here::here() (R) or equivalent.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Code standards</span>"
+    ]
+  },
+  {
+    "objectID": "06-code.html#review-checklist",
+    "href": "06-code.html#review-checklist",
+    "title": "Code standards",
+    "section": "Review checklist",
+    "text": "Review checklist\n\n\n\nCheck\nBefore merge\n\n\n\n\nFormatter/linter (styler, ruff, …)\nYes\n\n\nDocumented runtime\nYes\n\n\nNew deps explained in README\nYes",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Code standards</span>"
+    ]
+  },
+  {
+    "objectID": "06-code.html#generative-ai",
+    "href": "06-code.html#generative-ai",
+    "title": "Code standards",
+    "section": "Generative AI",
+    "text": "Generative AI\n\nVerify numbers on toy cases.\nNever paste identifiable records into public prompts.\nDisclose in the PR comment if a large block came from an assistant tool.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Code standards</span>"
+    ]
+  },
+  {
+    "objectID": "07-quickstart.html",
+    "href": "07-quickstart.html",
+    "title": "Quick start (checklist)",
+    "section": "",
+    "text": "Day 0 — Access",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Quick start (checklist)</span>"
+    ]
+  },
+  {
+    "objectID": "07-quickstart.html#day-0-access",
+    "href": "07-quickstart.html#day-0-access",
+    "title": "Quick start (checklist)",
+    "section": "",
+    "text": "GitHub account with institutional email.\nOrg invite (if any) or planned fork.\nSkim Lineamientos_colaboradores (~15 min).",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Quick start (checklist)</span>"
+    ]
+  },
+  {
+    "objectID": "07-quickstart.html#day-1-environment",
+    "href": "07-quickstart.html#day-1-environment",
+    "title": "Quick start (checklist)",
+    "section": "Day 1 — Environment",
+    "text": "Day 1 — Environment\n\nInstall Quarto if you will edit this manual.\nR ≥ 4.2 or project-appropriate Python + VS Code / RStudio / Positron.\nConfigure git name + verified email.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Quick start (checklist)</span>"
+    ]
+  },
+  {
+    "objectID": "07-quickstart.html#day-2-first-repo",
+    "href": "07-quickstart.html#day-2-first-repo",
+    "title": "Quick start (checklist)",
+    "section": "Day 2 — First repo",
+    "text": "Day 2 — First repo\n\nClone a reference repo (e.g. CIIIA-ClimateBirthWeightAnalysis).\nBranch setup/&lt;your-initials&gt;.\nConfirm README script order matches reality.\nRun at least one Descriptive/ script on a test slice if full data is heavy.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Quick start (checklist)</span>"
+    ]
+  },
+  {
+    "objectID": "07-quickstart.html#before-publishing-findings",
+    "href": "07-quickstart.html#before-publishing-findings",
+    "title": "Quick start (checklist)",
+    "section": "Before publishing findings",
+    "text": "Before publishing findings\n\nREADME documents external data + funding.\nOutput_Analysis only has agreed finals.\nNo secrets or identifiable tables in history.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Quick start (checklist)</span>"
+    ]
+  },
+  {
+    "objectID": "07-quickstart.html#updating-this-manual",
+    "href": "07-quickstart.html#updating-this-manual",
+    "title": "Quick start (checklist)",
+    "section": "Updating this manual",
+    "text": "Updating this manual\nquarto preview\nquarto render               # Spanish → _site/\ncd english && quarto render && cd ..   # English → _site/en/\nOn push to main, .github/workflows/publish.yml publishes gh-pages.\nPublic URL: https://climchange-newbornhealth.github.io/eblab-manual/\nSettings → Pages should use branch gh-pages, folder / (root).",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Quick start (checklist)</span>"
+    ]
+  },
+  {
+    "objectID": "08-contributing.html",
+    "href": "08-contributing.html",
+    "title": "Contributing (projects & manual)",
+    "section": "",
+    "text": "Creating repositories\nThis chapter mirrors Lineamientos para colaboradores; figures are reproduced from that repo inside this manual.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Contributing (projects & manual)</span>"
+    ]
+  },
+  {
+    "objectID": "08-contributing.html#creating-repositories",
+    "href": "08-contributing.html#creating-repositories",
+    "title": "Contributing (projects & manual)",
+    "section": "",
+    "text": "Step 1 — create the repo\n\n\n\nStep 1 — Create repository\n\n\n\n\nStep 2 — configure metadata & base files\n\n\n\nStep 2 — Repository settings\n\n\nRepositories in the EB-Lab ecosystem under ClimChange-NewbornHealth should have:\n\nShort names, ideally English.\nA concise description.\nPublic visibility (unless a documented exception).\nREADME.md, .gitignore, license (MIT recommended).\n\n\n\nStep 3 — clone locally\n\n\n\nStep 3 — Clone URL\n\n\nUse RStudio, VS Code, Positron, or any IDE that respects git + relative paths.\n\n\n\n\n\n\nTipSmall PRs\n\n\n\nPrefer short branches & reviewed PRs before merging to main, especially for Models/ and final artifacts.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Contributing (projects & manual)</span>"
+    ]
+  },
+  {
+    "objectID": "08-contributing.html#expected-folder-layout",
+    "href": "08-contributing.html#expected-folder-layout",
+    "title": "Contributing (projects & manual)",
+    "section": "Expected folder layout",
+    "text": "Expected folder layout\nCode/\n  Process/\n  Descriptive/\n  Models/\nOutput_Analysis/\n  Graphs/\n  Tables/\n.gitignore\nREADME.md\nLICENSE",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Contributing (projects & manual)</span>"
+    ]
+  },
+  {
+    "objectID": "08-contributing.html#readme-content",
+    "href": "08-contributing.html#readme-content",
+    "title": "Contributing (projects & manual)",
+    "section": "README content",
+    "text": "README content\n\n\n\nREADME outline\n\n\n\nTitle (ideally manuscript title).\nMetrics & funding (see template).\nAuthors incl. emails + repo maintainer.\nScientific description from the abstract where possible.\nData access links + ordered script execution.\nKey results — numbered figures/tables with notes.\n\nTemplate: Plantilla_README.md.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Contributing (projects & manual)</span>"
+    ]
+  },
+  {
+    "objectID": "08-contributing.html#data-stays-off-repo",
+    "href": "08-contributing.html#data-stays-off-repo",
+    "title": "Contributing (projects & manual)",
+    "section": "Data stays off-repo",
+    "text": "Data stays off-repo\nRepos hold code to replicate; large tables are linked externally.\n\n\n\n\n\n\nWarningStorage & privacy\n\n\n\nUploading entire bases bloats the repo and increases disclosure risk. Keep access-controlled storage outside public git.\n\n\n\n\n\nExternal data example\n\n\n\n\n\nExternal data example\n\n\nExample README + external data workflow: CIIIA-ClimateBirthWeightAnalysis.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Contributing (projects & manual)</span>"
+    ]
+  },
+  {
+    "objectID": "08-contributing.html#contributing-to-this-manual",
+    "href": "08-contributing.html#contributing-to-this-manual",
+    "title": "Contributing (projects & manual)",
+    "section": "Contributing to this manual",
+    "text": "Contributing to this manual\n\nFork or obtain write access to eblab-manual.\nEdit .qmd files / _quarto.yml as needed.\nMaintain Spanish + English: run renders for both locales before PRs (quarto render + cd english && quarto render).\nOpen a pull request explaining the change.\n\nRepository access questions: jdconejeros@uc.cl (Research collaborator – Repository manager).",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Contributing (projects & manual)</span>"
+    ]
+  }
+]

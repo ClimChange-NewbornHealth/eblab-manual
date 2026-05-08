@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; Estándares de código – ClimChange-NewbornHealth · Lab Manual</title>
+<title>Estándares de código – EB-Lab · Manual de trabajo</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -46,15 +46,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-36bf55b16c7cb4b1420f41495cb5446a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-4e061325f75ba7fba053004d9d2e9411.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-36bf55b16c7cb4b1420f41495cb5446a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8cd3fab34cdc78d0c6d7a83014d4448e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-6eafb7d8a32821d17ab29165d7f474e6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-8cd3fab34cdc78d0c6d7a83014d4448e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="custom.scss">
 </head>
 
-<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -247,38 +247,50 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./assets/ebb-logo.png" alt="" class="navbar-logo light-content">
+    <img src="./assets/ebb-logo.png" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">EB-Lab</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./en/index.html"> 
+<span class="menu-text">English</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/ClimChange-NewbornHealth/eblab-manual/" title="Ejecutar el código" class="quarto-navigation-tool px-1" aria-label="Ejecutar el código"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06-codigo.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Estándares de código</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06-codigo.html"><span class="chapter-title">Estándares de código</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">ClimChange-NewbornHealth · Lab Manual</a> 
-        <div class="sidebar-tools-main">
-    <a href="https://github.com/ClimChange-NewbornHealth/lab-manual/" title="Ejecutar el código" class="quarto-navigation-tool px-1" aria-label="Ejecutar el código"><i class="bi bi-github"></i></a>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
-</div>
-    </div>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Buscar"></div>
-        </div>
-        </div>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -289,44 +301,42 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01-bienvenida.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Bienvenida al equipo</span></span></a>
+  <a href="./01-bienvenida.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bienvenida al equipo</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02-cultura.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Cultura operativa del laboratorio</span></span></a>
+  <a href="./02-cultura.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Cultura operativa del laboratorio</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03-reproducibilidad.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Reproducibilidad práctica</span></span></a>
+  <a href="./03-reproducibilidad.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Reproducibilidad práctica</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04-repositorios.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Repositorios y convenciones</span></span></a>
+  <a href="./04-repositorios.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Repositorios y convenciones</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./05-flujos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Flujos de trabajo con Git</span></span></a>
+  <a href="./05-flujos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Flujos de trabajo con Git</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./06-codigo.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Estándares de código</span></span></a>
+  <a href="./06-codigo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Estándares de código</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./07-inicio-rapido.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Inicio rápido (checklist)</span></span></a>
+  <a href="./07-inicio-rapido.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Inicio rápido (checklist)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-contribuir.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Cómo contribuir (proyectos y manual)</span></a>
   </div>
 </li>
     </ul>
@@ -339,14 +349,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#lenguajes-predominantes" id="toc-lenguajes-predominantes" class="nav-link active" data-scroll-target="#lenguajes-predominantes"><span class="header-section-number">6.1</span> Lenguajes predominantes</a></li>
-  <li><a href="#estilo-y-legibilidad" id="toc-estilo-y-legibilidad" class="nav-link" data-scroll-target="#estilo-y-legibilidad"><span class="header-section-number">6.2</span> Estilo y legibilidad</a></li>
-  <li><a href="#organización-de-scripts" id="toc-organización-de-scripts" class="nav-link" data-scroll-target="#organización-de-scripts"><span class="header-section-number">6.3</span> Organización de scripts</a>
+  <li><a href="#lenguajes-predominantes" id="toc-lenguajes-predominantes" class="nav-link active" data-scroll-target="#lenguajes-predominantes">Lenguajes predominantes</a></li>
+  <li><a href="#estilo-y-legibilidad" id="toc-estilo-y-legibilidad" class="nav-link" data-scroll-target="#estilo-y-legibilidad">Estilo y legibilidad</a></li>
+  <li><a href="#organización-de-scripts" id="toc-organización-de-scripts" class="nav-link" data-scroll-target="#organización-de-scripts">Organización de scripts</a>
   <ul class="collapse">
-  <li><a href="#salidas" id="toc-salidas" class="nav-link" data-scroll-target="#salidas"><span class="header-section-number">6.3.1</span> Salidas</a></li>
+  <li><a href="#salidas" id="toc-salidas" class="nav-link" data-scroll-target="#salidas">Salidas</a></li>
   </ul></li>
-  <li><a href="#calidad-y-revisión" id="toc-calidad-y-revisión" class="nav-link" data-scroll-target="#calidad-y-revisión"><span class="header-section-number">6.4</span> Calidad y revisión</a></li>
-  <li><a href="#uso-asistido-por-ia-lineamiento-práctico" id="toc-uso-asistido-por-ia-lineamiento-práctico" class="nav-link" data-scroll-target="#uso-asistido-por-ia-lineamiento-práctico"><span class="header-section-number">6.5</span> Uso asistido por IA (lineamiento práctico)</a></li>
+  <li><a href="#calidad-y-revisión" id="toc-calidad-y-revisión" class="nav-link" data-scroll-target="#calidad-y-revisión">Calidad y revisión</a></li>
+  <li><a href="#uso-asistido-por-ia-lineamiento-práctico" id="toc-uso-asistido-por-ia-lineamiento-práctico" class="nav-link" data-scroll-target="#uso-asistido-por-ia-lineamiento-práctico">Uso asistido por IA (lineamiento práctico)</a></li>
   </ul>
 </nav>
     </div>
@@ -356,7 +366,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-codigo" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Estándares de código</span></span></h1>
+<h1 class="title"><span id="sec-codigo" class="quarto-section-identifier"><span class="chapter-title">Estándares de código</span></span></h1>
 </div>
 
 
@@ -373,20 +383,33 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="lenguajes-predominantes" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="lenguajes-predominantes"><span class="header-section-number">6.1</span> Lenguajes predominantes</h2>
-<p>La mayoría de pipelines históricos están en <strong>R</strong>; algunos proyectos recientes incorporan <strong>Python</strong> (por ejemplo flujos geoespaciales o de descarga automatizada). Los principios siguientes aplican a ambos.</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Lenguaje principal
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La mayoría de los pipelines históricos están en <strong>R</strong>; algunos proyectos usan <strong>Python</strong>. Los mismos principios de estilo y revisión aplican a ambos.</p>
+</div>
+</div>
+<section id="lenguajes-predominantes" class="level2">
+<h2 class="anchored" data-anchor-id="lenguajes-predominantes">Lenguajes predominantes</h2>
+<p>Algunos proyectos recientes incorporan <strong>Python</strong> (geoespacial, descarga automatizada); más abajo aplican mismos estándares de revisión que en <strong>R</strong>.</p>
 </section>
-<section id="estilo-y-legibilidad" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="estilo-y-legibilidad"><span class="header-section-number">6.2</span> Estilo y legibilidad</h2>
+<section id="estilo-y-legibilidad" class="level2">
+<h2 class="anchored" data-anchor-id="estilo-y-legibilidad">Estilo y legibilidad</h2>
 <ol type="1">
 <li><strong>Funciones cortas</strong> — una responsabilidad por función; nombres verbales (<code>compute_exposure_lag</code>) sobre abreviaturas opacas.</li>
 <li><strong>Comentarios “por qué”</strong> — no repitas lo obvio del <code>dplyr</code> pipeline; sí documenta supuestos epidemiológicos no triviales.</li>
 <li><strong>Constantes arriba</strong> — umbrales clínicos, fechas de corte administrativas, versiones de shapefiles en un bloque único al inicio del script o en <code>config.R</code> / <code>config.py</code>.</li>
 </ol>
 </section>
-<section id="organización-de-scripts" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="organización-de-scripts"><span class="header-section-number">6.3</span> Organización de scripts</h2>
+<section id="organización-de-scripts" class="level2">
+<h2 class="anchored" data-anchor-id="organización-de-scripts">Organización de scripts</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -413,16 +436,16 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<section id="salidas" class="level3" data-number="6.3.1">
-<h3 data-number="6.3.1" class="anchored" data-anchor-id="salidas"><span class="header-section-number">6.3.1</span> Salidas</h3>
+<section id="salidas" class="level3">
+<h3 class="anchored" data-anchor-id="salidas">Salidas</h3>
 <ul>
 <li>Gráficos y tablas finales → <code>Output_Analysis/Graphs</code> y <code>.../Tables</code> según lineamientos.</li>
 <li>Evita escribir resultados con rutas absolutas locales; parametriza un directorio raíz <code>here::here()</code> (R) o equivalente.</li>
 </ul>
 </section>
 </section>
-<section id="calidad-y-revisión" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="calidad-y-revisión"><span class="header-section-number">6.4</span> Calidad y revisión</h2>
+<section id="calidad-y-revisión" class="level2">
+<h2 class="anchored" data-anchor-id="calidad-y-revisión">Calidad y revisión</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -446,8 +469,8 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </section>
-<section id="uso-asistido-por-ia-lineamiento-práctico" class="level2" data-number="6.5">
-<h2 data-number="6.5" class="anchored" data-anchor-id="uso-asistido-por-ia-lineamiento-práctico"><span class="header-section-number">6.5</span> Uso asistido por IA (lineamiento práctico)</h2>
+<section id="uso-asistido-por-ia-lineamiento-práctico" class="level2">
+<h2 class="anchored" data-anchor-id="uso-asistido-por-ia-lineamiento-práctico">Uso asistido por IA (lineamiento práctico)</h2>
 <p>Si empleas asistentes generativos:</p>
 <ul>
 <li><strong>Verifica</strong> salidas numéricas con casos test pequeños conocidos.</li>
@@ -545,7 +568,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/climchange-newbornhealth\.github\.io\/lab-manual\/");
+        var filterRegex = new RegExp("https:\/\/climchange-newbornhealth\.github\.io\/eblab-manual\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -875,16 +898,41 @@ ul.task-list li input[type="checkbox"] {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./05-flujos.html" class="pagination-link" aria-label="Flujos de trabajo con Git">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Flujos de trabajo con Git</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Flujos de trabajo con Git</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./07-inicio-rapido.html" class="pagination-link" aria-label="Inicio rápido (checklist)">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Inicio rápido (checklist)</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-title">Inicio rápido (checklist)</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>EB-Lab</p>
+</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://zenodo.org/">
+<p>DOI (pendiente en Zenodo)</p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://estelablanco.cl/">
+<p>estelablanco.cl</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 
