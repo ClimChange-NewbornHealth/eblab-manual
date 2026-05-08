@@ -76,6 +76,34 @@ a {
   font-weight: 500;
 }
 
+/* Barra lateral del índice del libro + cuerpo central más anchos */
+@media (min-width: 992px) {
+  #quarto-content.page-columns {
+    align-items: flex-start;
+  }
+
+  body.nav-sidebar.docked #quarto-sidebar.sidebar {
+    flex: 0 0 19.5rem !important;
+    width: 19.5rem !important;
+    min-width: 19.5rem !important;
+    max-width: 19.5rem !important;
+  }
+
+  main#quarto-document-content.content {
+    flex: 1 1 auto !important;
+    max-width: 58rem !important;
+    width: 100%;
+    min-width: 0;
+  }
+
+  #quarto-margin-sidebar.sidebar {
+    flex: 0 0 13.5rem !important;
+    width: 13.5rem !important;
+    min-width: 11rem !important;
+    max-width: 14rem !important;
+  }
+}
+
 h1.title,
 .sidebar-title-main {
   color: var(--ebl-ink);
@@ -118,6 +146,32 @@ div.callout-note {
 
 [data-bs-theme="dark"] body {
   --ebl-ink: #f5f7f9;
+}
+
+/* Tema oscuro: enlaces en azul (evita el verde por defecto de darkly) */
+[data-bs-theme="dark"] a,
+[data-bs-theme="dark"] a.quarto-title-author-email,
+[data-bs-theme="dark"] a.quarto-title-author-orcid {
+  color: #5eb3ff !important;
+}
+
+[data-bs-theme="dark"] a:hover,
+[data-bs-theme="dark"] a.quarto-title-author-email:hover,
+[data-bs-theme="dark"] a.quarto-title-author-orcid:hover {
+  color: #9fd1ff !important;
+}
+
+[data-bs-theme="dark"] .sidebar-link {
+  color: #d0d5dd !important;
+}
+
+[data-bs-theme="dark"] .sidebar-link.active {
+  color: #5eb3ff !important;
+  background: rgba(94, 179, 255, 0.12) !important;
+}
+
+[data-bs-theme="dark"] .sidebar-link:hover {
+  color: #9fd1ff !important;
 }
 
 [data-bs-theme="dark"] .navbar {
