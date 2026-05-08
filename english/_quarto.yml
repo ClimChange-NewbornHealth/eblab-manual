@@ -33,8 +33,8 @@ book:
   page-footer:
     left: EB-Lab
     center:
-      - text: DOI (pending Zenodo record)
-        href: https://zenodo.org/
+      - text: DOI 10.5281/zenodo.20087987
+        href: https://doi.org/10.5281/zenodo.20087987
     right:
       - text: estelablanco.cl
         href: https://estelablanco.cl/

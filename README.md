@@ -9,6 +9,7 @@
 [![Colaboradores](https://img.shields.io/github/contributors/ClimChange-NewbornHealth/eblab-manual?style=flat-square&logo=github)](https://github.com/ClimChange-NewbornHealth/eblab-manual/graphs/contributors)
 [![Licencia](https://img.shields.io/github/license/ClimChange-NewbornHealth/eblab-manual?style=flat-square)](https://github.com/ClimChange-NewbornHealth/eblab-manual/blob/main/LICENSE)
 [![Construido con Quarto](https://img.shields.io/badge/Quarto-75AADB?style=flat-square&logo=quarto&logoColor=white)](https://quarto.org/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20087987.svg)](https://doi.org/10.5281/zenodo.20087987)
 
 Sitio libro HTML del **EB-Lab** sobre prácticas reproducibles del laboratorio (**exposición ambiental y salud perinatal**), alineado a los lineamientos de la organización [ClimChange-NewbornHealth](https://github.com/ClimChange-NewbornHealth).
 
@@ -37,7 +38,7 @@ La salida combinada va a `_site/` (español en raíz, inglés en `en/`). Esa car
 
 | Elemento | Descripción |
 | --- | --- |
-| `_quarto.yml` | Libro Quarto ES: título EB-Lab, autores/ORCID, nav **English**, pie Zenodo pendiente |
+| `_quarto.yml` | Libro Quarto ES: título EB-Lab, autores/ORCID, nav **English**, pie con enlace **DOI** (Zenodo) |
 | `custom.scss` | Estilos cercanos al sitio del laboratorio |
 | `english/` | Misma versión en inglés → `_site/en/` |
 | `assets/` | Logo y figuras tomadas del instructivo Lineamientos |
@@ -45,8 +46,7 @@ La salida combinada va a `_site/` (español en raíz, inglés en `en/`). Esa car
 
 ## Zenodo · DOI
 
-Después del depósito en [Zenodo](https://zenodo.org/), enlaza el **DOI** en `book.page-footer.center` de `_quarto.yml` y, si conviene, añade aquí una línea tipo  
-`[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxxxx.svg)](https://doi.org/10.5281/zenodo.xxxxxxxx)`.
+Versión archivada: [registro en Zenodo](https://zenodo.org/records/20087988) · **DOI** [10.5281/zenodo.20087987](https://doi.org/10.5281/zenodo.20087987) (pie del libro en `_quarto.yml` y `english/_quarto.yml`).
 
 ## Recursos relacionados
 
