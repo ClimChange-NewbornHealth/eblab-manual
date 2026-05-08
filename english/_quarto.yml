@@ -4,6 +4,9 @@ project:
 
 lang: en
 
+language:
+  title-block-published: "Last updated"
+
 book:
   title: "EB-Lab · Lab manual"
   subtitle: Environmental health in the neonatal period · exposure and perinatal health
@@ -19,6 +22,8 @@ book:
     - name: José Daniel Conejeros
       email: jdconejeros@uc.cl
       orcid: 0000-0003-3402-4361
+
+  doi: 10.5281/zenodo.20087987
 
   navbar:
     title: EB-Lab
@@ -52,6 +57,7 @@ book:
 
 format:
   html:
+    doi-title: DOI
     theme:
       light: cosmo
       dark: darkly
